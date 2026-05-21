@@ -278,7 +278,6 @@ const es: Dictionary = {
     },
     sent_title: "¡Mensaje enviado!",
     sent_body: "Nos pondremos en contacto en menos de 24 horas.",
-    instagram_label: "Instagram",
   },
 
   footer: {

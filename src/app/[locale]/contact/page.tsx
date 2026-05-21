@@ -2,7 +2,7 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
 import { useParams } from "next/navigation";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Loader2 } from "lucide-react";
 import AnimateIn from "@/components/AnimateIn";
 import en from "@/dictionaries/en";
 import es from "@/dictionaries/es";
@@ -13,9 +13,10 @@ export default function ContactPage() {
   const dict = locale === "es" ? es : en;
   const t = dict.contact;
 
-  const [form, setForm] = useState({ nombre: "", empresa: "", email: "", objetivo: "" });
+  const [form, setForm] = useState({ name: "", company: "", email: "", goal: "" });
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -24,16 +25,39 @@ export default function ContactPage() {
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     setLoading(true);
-    // TODO: connect email sending (Resend) — for now just shows success
-    await new Promise((r) => setTimeout(r, 600));
-    setSent(true);
-    setLoading(false);
+    setError("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, locale }),
+      });
+
+      if (!res.ok) throw new Error("Failed");
+      setSent(true);
+    } catch {
+      setError(
+        locale === "es"
+          ? "Algo salió mal. Intenta de nuevo."
+          : "Something went wrong. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
   }
+
+  const fields = [
+    { name: "name",    label: t.fields.name,    type: "text",  placeholder: "John Smith",          required: true  },
+    { name: "company", label: t.fields.company,  type: "text",  placeholder: "Acme Inc.",           required: false },
+    { name: "email",   label: t.fields.email,    type: "email", placeholder: "you@company.com",     required: true  },
+  ];
 
   return (
     <section className="relative min-h-screen flex items-start justify-center overflow-hidden dot-grid pt-24 pb-16 px-5">
       <div className="beam" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black pointer-events-none" />
+
       <div className="relative z-10 w-full max-w-xl">
         <AnimateIn>
           <div className="badge mb-5 w-fit">{t.badge}</div>
@@ -52,11 +76,7 @@ export default function ContactPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="card p-7 flex flex-col gap-5">
-              {[
-                { name: "nombre", label: t.fields.name, type: "text", placeholder: t.fields.name, required: true },
-                { name: "empresa", label: t.fields.company, type: "text", placeholder: t.fields.company, required: false },
-                { name: "email", label: t.fields.email, type: "email", placeholder: "you@email.com", required: true },
-              ].map((f) => (
+              {fields.map((f) => (
                 <div key={f.name}>
                   <label className="block text-white/40 text-xs font-medium uppercase tracking-wide mb-2">
                     {f.label} {f.required && <span className="text-white/20">*</span>}
@@ -78,9 +98,9 @@ export default function ContactPage() {
                   {t.fields.goal} <span className="text-white/20">*</span>
                 </label>
                 <select
-                  name="objetivo"
+                  name="goal"
                   required
-                  value={form.objetivo}
+                  value={form.goal}
                   onChange={handleChange}
                   className="w-full bg-white/[0.03] border border-white/[0.08] rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-white/20 transition-colors"
                 >
@@ -91,9 +111,21 @@ export default function ContactPage() {
                 </select>
               </div>
 
+              {error && (
+                <p className="text-red-400 text-sm">{error}</p>
+              )}
+
               <div className="divider" />
-              <button type="submit" disabled={loading} className="btn-primary py-3.5 text-sm w-full disabled:opacity-60">
-                {loading ? "Sending…" : t.fields.submit} <ArrowRight size={15} />
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="btn-primary py-3.5 text-sm w-full disabled:opacity-60 flex items-center justify-center gap-2"
+              >
+                {loading
+                  ? <><Loader2 size={15} className="animate-spin" /> {locale === "es" ? "Enviando…" : "Sending…"}</>
+                  : <>{t.fields.submit} <ArrowRight size={15} /></>
+                }
               </button>
             </form>
           )}

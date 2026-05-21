@@ -54,7 +54,7 @@ export default function MobileBottomBar({ dict, locale }: Props) {
         <div className="w-px bg-white/[0.08]" />
 
         <a
-          href="tel:+10000000000"
+          href="tel:+18329710434"
           className="flex flex-col items-center justify-center gap-1 flex-1 py-3 text-white/50 hover:text-white transition-colors"
         >
           <Phone size={20} />

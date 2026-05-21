@@ -276,7 +276,6 @@ const en = {
     },
     sent_title: "Message sent!",
     sent_body: "We'll be in touch within 24 hours.",
-    instagram_label: "Instagram",
   },
 
   footer: {
