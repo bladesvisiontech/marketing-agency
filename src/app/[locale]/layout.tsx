@@ -4,7 +4,8 @@ import { Geist } from "next/font/google";
 import "@/app/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import MobileBottomBar from "@/components/MobileBottomBar";
+import ChatBot from "@/components/ChatBot";
 import { getDictionary, isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
@@ -49,7 +50,10 @@ export default async function LocaleLayout({
         <Header dict={dict} locale={locale as Locale} />
         <main className="pt-14 pb-20 md:pb-0 flex-1">{children}</main>
         <Footer dict={dict} locale={locale as Locale} />
-        <WhatsAppButton />
+        {/* Mobile bottom bar — rendered outside header to avoid fixed-in-filter bug */}
+        <MobileBottomBar dict={dict} locale={locale as Locale} />
+        {/* AI chatbot — replaces WhatsApp bubble */}
+        <ChatBot />
       </body>
     </html>
   );
