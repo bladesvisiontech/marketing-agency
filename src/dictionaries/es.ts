@@ -265,7 +265,6 @@ const es: Dictionary = {
       name: "Nombre",
       company: "Empresa",
       email: "Email",
-      whatsapp: "WhatsApp",
       goal: "Objetivo principal",
       goal_placeholder: "Selecciona tu objetivo",
       goals: [
@@ -278,8 +277,7 @@ const es: Dictionary = {
       submit: "Quiero recibir una propuesta",
     },
     sent_title: "¡Mensaje enviado!",
-    sent_body: "Te redirigimos a WhatsApp. Responderemos en breve.",
-    whatsapp_label: "WhatsApp",
+    sent_body: "Nos pondremos en contacto en menos de 24 horas.",
     instagram_label: "Instagram",
   },
 
@@ -289,7 +287,6 @@ const es: Dictionary = {
     services_title: "Servicios",
     rights: "Todos los derechos reservados.",
     designed: "Diseñado para convertir.",
-    whatsapp_label: "WhatsApp",
     pages: [
       ["Inicio", "/"],
       ["Servicios", "/#services"],

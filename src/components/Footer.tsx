@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle } from "lucide-react";
 import type { Dictionary } from "@/dictionaries/en";
 import type { Locale } from "@/lib/i18n";
 
@@ -19,25 +18,9 @@ export default function Footer({ dict, locale }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           <div className="md:col-span-2">
             <Link href={base} className="inline-flex mb-4">
-              <Image
-                src="/inmotion-logo.svg"
-                alt="Inmotion"
-                width={110}
-                height={30}
-                className="h-6 w-auto"
-              />
+              <Image src="/inmotion-logo.svg" alt="Inmotion" width={110} height={30} className="h-6 w-auto" />
             </Link>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">{f.tagline}</p>
-            <div className="mt-5">
-              <a
-                href="https://wa.me/1234567890"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
-              >
-                <MessageCircle size={15} /> {f.whatsapp_label ?? "WhatsApp"}
-              </a>
-            </div>
           </div>
 
           <div>
@@ -69,9 +52,7 @@ export default function Footer({ dict, locale }: FooterProps) {
 
         <div className="divider mb-6" />
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-          <p className="text-white/25 text-xs">
-            © {new Date().getFullYear()} Inmotion. {f.rights}
-          </p>
+          <p className="text-white/25 text-xs">© {new Date().getFullYear()} Inmotion. {f.rights}</p>
           <p className="text-white/25 text-xs">{f.designed}</p>
         </div>
       </div>

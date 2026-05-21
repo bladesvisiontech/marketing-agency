@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileBottomBar from "@/components/MobileBottomBar";
 import ChatBot from "@/components/ChatBot";
+// WhatsAppButton removed
 import { getDictionary, isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 

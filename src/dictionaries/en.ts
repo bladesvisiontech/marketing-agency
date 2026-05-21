@@ -263,7 +263,6 @@ const en = {
       name: "Name",
       company: "Company",
       email: "Email",
-      whatsapp: "WhatsApp",
       goal: "Main goal",
       goal_placeholder: "Select your goal",
       goals: [
@@ -276,8 +275,7 @@ const en = {
       submit: "I want to receive a proposal",
     },
     sent_title: "Message sent!",
-    sent_body: "We redirected you to WhatsApp. We'll reply shortly.",
-    whatsapp_label: "WhatsApp",
+    sent_body: "We'll be in touch within 24 hours.",
     instagram_label: "Instagram",
   },
 
@@ -287,7 +285,6 @@ const en = {
     services_title: "Services",
     rights: "All rights reserved.",
     designed: "Designed to convert.",
-    whatsapp_label: "WhatsApp",
     pages: [
       ["Home", "/"],
       ["Services", "/#services"],

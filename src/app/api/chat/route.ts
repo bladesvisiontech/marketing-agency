@@ -30,7 +30,7 @@ Stripe payment links (share only when prospect is ready):
 - Audit: https://buy.stripe.com/auditoria800
 - E-commerce: https://buy.stripe.com/ecommerce1400
 
-Contact/booking: Direct them to /contact page or WhatsApp for custom quotes.`;
+Contact/booking: Direct them to the /contact page for custom quotes.`;
 
 export async function POST(request: Request) {
   try {
