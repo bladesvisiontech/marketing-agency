@@ -1,43 +1,274 @@
 @import "tailwindcss";
 
+/* ── Design tokens ── */
 :root {
-  --background: #0a0a0a;
-  --foreground: #ffffff;
+  --bg: #000000;
+  --fg: #ffffff;
+  --muted: rgba(255, 255, 255, 0.5);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.18);
+  --accent: #97c121;
+  --accent-blue: #1b4fd8;
+  --accent-purple: #9b27f9;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --radius: 12px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg);
+  color: var(--fg);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  scroll-behavior: smooth;
+html { scroll-behavior: smooth; }
+
+/* ── Dot grid background ── */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
+/* ── Top beam / glow ── */
+.beam {
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(155, 39, 249, 0.6), rgba(27, 79, 216, 0.6), transparent);
+}
+.beam::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 300px;
+  background: radial-gradient(ellipse 70% 300px at 50% 0%, rgba(100, 60, 200, 0.12), transparent 80%);
+  pointer-events: none;
+}
+
+/* ── Gradient text (logo colors) ── */
 .gradient-text {
-  background: linear-gradient(135deg, #22c55e, #16a34a);
+  background: linear-gradient(135deg, #1b4fd8, #9b27f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradient-text-green {
+  background: linear-gradient(135deg, #97c121, #5a8a00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.gradient-bg {
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+/* ── Gradient border card ── */
+.card {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: calc(var(--radius) + 1px);
+  background: linear-gradient(135deg, rgba(27, 79, 216, 0), rgba(155, 39, 249, 0), rgba(151, 193, 33, 0));
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.card:hover::before {
+  background: linear-gradient(135deg, rgba(27, 79, 216, 0.5), rgba(155, 39, 249, 0.5), rgba(151, 193, 33, 0.3));
+  opacity: 1;
+}
+.card:hover {
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(100, 60, 200, 0.12);
 }
 
-.card-hover {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+/* ── Primary button ── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+.btn-primary:hover {
+  background: #e8e8e8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.12);
+}
+.btn-primary:active { transform: translateY(0); }
+
+/* Shimmer on btn-primary */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transform: skewX(-15deg);
+  transition: left 0.5s ease;
+}
+.btn-primary:hover::after { left: 160%; }
+
+/* ── Outline button ── */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--fg);
+  font-weight: 500;
+  border: 1px solid var(--border-hover);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
 }
 
-.card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(34, 197, 94, 0.15);
+/* ── Stripe / Accent button ── */
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1b4fd8, #9b27f9);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+.btn-accent:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(155, 39, 249, 0.35);
+}
+.btn-accent:active { transform: translateY(0); }
+
+/* ── Fade-up animation (JS-triggered via data-animate) ── */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+[data-animate].in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children */
+[data-stagger] > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+[data-stagger].in-view > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: none; }
+[data-stagger].in-view > *:nth-child(2) { transition-delay: 80ms; opacity: 1; transform: none; }
+[data-stagger].in-view > *:nth-child(3) { transition-delay: 160ms; opacity: 1; transform: none; }
+[data-stagger].in-view > *:nth-child(4) { transition-delay: 240ms; opacity: 1; transform: none; }
+[data-stagger].in-view > *:nth-child(5) { transition-delay: 320ms; opacity: 1; transform: none; }
+[data-stagger].in-view > *:nth-child(6) { transition-delay: 400ms; opacity: 1; transform: none; }
+
+/* ── Stat counter glow ── */
+.stat-value {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+}
+
+/* ── Nav link hover underline ── */
+.nav-link {
+  position: relative;
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 1px;
+  background: rgba(255,255,255,0.6);
+  transition: width 0.25s ease;
+}
+.nav-link:hover { color: #fff; }
+.nav-link:hover::after { width: 100%; }
+
+/* ── Divider with gradient ── */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-hover), transparent);
+}
+
+/* ── Badge / pill ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-hover);
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.01em;
+}
+
+/* ── Glow dot (animated pulse) ── */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+.glow-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #97c121;
+  animation: pulse-dot 2s ease-in-out infinite;
+  box-shadow: 0 0 6px #97c121;
+}
+
+/* ── Section spacing ── */
+.section { padding: 96px 24px; }
+.section-sm { padding: 64px 24px; }
+
+/* ── Horizontal scroll shine on stat cards ── */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
 }

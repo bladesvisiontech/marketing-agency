@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, ArrowRight } from "lucide-react";
+import AnimateIn from "@/components/AnimateIn";
 
 export const metadata: Metadata = {
-  title: "Websites que convierten | GrowthLab",
-  description:
-    "Tu web debería ayudarte a vender. No solo verse bonita. Sitios rápidos, estratégicos y enfocados en conversión desde USD 700.",
+  title: "Websites que convierten | Inmotion",
+  description: "Sitios rápidos, estratégicos y enfocados en conversión. Desde USD 700.",
 };
 
 const includes = [
@@ -29,82 +29,95 @@ const problems = [
 export default function WebsitesPage() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-green-950/20 via-black to-black pointer-events-none" />
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
-            Websites que convierten{" "}
-            <span className="gradient-text">visitas en clientes</span>
-          </h1>
-          <p className="text-gray-400 text-xl mb-6">
-            Tu web debería ayudarte a vender. No solo verse bonita.
-          </p>
-          <p className="text-gray-300 mb-8">
-            Creamos sitios rápidos, estratégicos y enfocados en conversión.
-          </p>
-          <div className="gradient-text font-extrabold text-5xl mb-8">USD 700</div>
-          <a
-            href="https://buy.stripe.com/website700"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="gradient-bg text-black font-bold px-10 py-5 rounded-full text-xl hover:opacity-90 transition-opacity inline-block"
-          >
-            Empezar mi proyecto
-          </a>
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden dot-grid">
+        <div className="beam" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
+        <div className="relative z-10 max-w-4xl mx-auto px-5 pt-20 pb-16">
+          <AnimateIn>
+            <div className="badge mb-5 w-fit">Websites</div>
+          </AnimateIn>
+          <AnimateIn delay={60}>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-5">
+              Websites que convierten{" "}
+              <span className="text-white/40">visitas en clientes</span>
+            </h1>
+          </AnimateIn>
+          <AnimateIn delay={120}>
+            <p className="text-white/50 text-xl mb-8 max-w-xl">
+              Tu web debería ayudarte a vender. No solo verse bonita.
+            </p>
+          </AnimateIn>
+          <AnimateIn delay={180}>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <a
+                href="https://buy.stripe.com/website700"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-base px-6 py-3"
+              >
+                Empezar mi proyecto — USD 700 <ArrowRight size={16} />
+              </a>
+              <Link href="/contacto" className="btn-outline text-base px-6 py-3">
+                Tengo preguntas
+              </Link>
+            </div>
+          </AnimateIn>
         </div>
       </section>
 
-      {/* INCLUDES */}
-      <section className="py-20 px-4 bg-zinc-950">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Qué incluye</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {includes.map((item) => (
-              <div key={item} className="flex items-center gap-3 bg-black border border-white/10 rounded-xl p-4">
-                <CheckCircle size={20} className="text-green-500 flex-shrink-0" />
-                <span className="text-gray-200">{item}</span>
-              </div>
-            ))}
-          </div>
+      <section className="section border-t border-white/[0.06]">
+        <div className="max-w-4xl mx-auto px-5">
+          <AnimateIn className="mb-10">
+            <h2 className="text-3xl font-bold tracking-tight">Qué incluye</h2>
+          </AnimateIn>
+          <AnimateIn stagger>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {includes.map((item) => (
+                <div key={item} className="card flex items-center gap-3 px-5 py-4">
+                  <CheckCircle size={16} className="text-[#97c121] flex-shrink-0" />
+                  <span className="text-white/70 text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
+          </AnimateIn>
         </div>
       </section>
 
-      {/* PROBLEMS */}
-      <section className="py-20 px-4 bg-black">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Problemas que resolvemos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {problems.map((p) => (
-              <div key={p.problem} className="bg-zinc-950 border border-white/10 rounded-2xl p-6">
-                <p className="text-gray-400 text-sm mb-2">{p.problem}</p>
-                <p className="text-white font-semibold">{p.solution}</p>
-              </div>
-            ))}
-          </div>
+      <section className="section border-t border-white/[0.06]">
+        <div className="max-w-4xl mx-auto px-5">
+          <AnimateIn className="mb-10">
+            <h2 className="text-3xl font-bold tracking-tight">Problemas que resolvemos</h2>
+          </AnimateIn>
+          <AnimateIn stagger>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {problems.map((p) => (
+                <div key={p.problem} className="card p-6">
+                  <p className="text-white/30 text-sm mb-2">{p.problem}</p>
+                  <p className="text-white/80 font-medium">{p.solution}</p>
+                </div>
+              ))}
+            </div>
+          </AnimateIn>
         </div>
       </section>
 
-      {/* CTA FINAL */}
-      <section className="py-24 px-4 bg-gradient-to-b from-zinc-950 to-green-950/30 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-          Tu sitio puede convertirse en tu mejor vendedor.
-        </h2>
-        <p className="text-gray-400 mb-8 text-lg">
-          Un sitio estratégico que trabaja 24/7 para atraer y convertir clientes.
-        </p>
-        <a
-          href="https://buy.stripe.com/website700"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="gradient-bg text-black font-bold px-10 py-5 rounded-full text-xl hover:opacity-90 transition-opacity inline-block"
-        >
-          Quiero mi website — USD 700
-        </a>
-        <div className="mt-4">
-          <Link href="/contacto" className="text-gray-400 hover:text-green-400 transition-colors text-sm">
-            ¿Tienes preguntas? Hablemos →
-          </Link>
+      <section className="section border-t border-white/[0.06] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_100%,rgba(100,60,200,0.08),transparent)]" />
+        <div className="relative z-10 max-w-3xl mx-auto px-5 text-center">
+          <AnimateIn>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+              Tu sitio puede ser tu mejor vendedor.
+            </h2>
+            <p className="text-white/40 mb-8">Un activo digital que trabaja 24/7 para atraer y convertir clientes.</p>
+            <a
+              href="https://buy.stripe.com/website700"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-base px-7 py-3.5 inline-flex"
+            >
+              Quiero mi website — USD 700 <ArrowRight size={16} />
+            </a>
+          </AnimateIn>
         </div>
       </section>
     </>

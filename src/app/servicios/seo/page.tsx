@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle, TrendingUp, Zap, Award, Users } from "lucide-react";
+import { CheckCircle, TrendingUp, Zap, Award, Users, ArrowRight } from "lucide-react";
+import AnimateIn from "@/components/AnimateIn";
 
 export const metadata: Metadata = {
-  title: "SEO — Posicionamiento en Google | GrowthLab",
-  description:
-    "Posicionamos tu negocio para atraer tráfico de calidad desde Google. SEO desde USD 500.",
+  title: "SEO — Posicionamiento en Google | Inmotion",
+  description: "Posicionamos tu negocio para atraer tráfico de calidad desde Google. Desde USD 500.",
 };
 
 const includes = [
@@ -29,79 +29,96 @@ const benefits = [
 export default function SeoPage() {
   return (
     <>
-      <section className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-green-950/20 via-black to-black pointer-events-none" />
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
-            Aparece cuando tus{" "}
-            <span className="gradient-text">clientes te buscan</span>
-          </h1>
-          <p className="text-gray-400 text-xl mb-6">
-            El mejor sitio del mundo no sirve si nadie lo encuentra.
-          </p>
-          <p className="text-gray-300 mb-8">
-            Posicionamos tu negocio para atraer tráfico de calidad desde Google.
-          </p>
-          <div className="gradient-text font-extrabold text-5xl mb-8">USD 500</div>
-          <a
-            href="https://buy.stripe.com/seo500"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="gradient-bg text-black font-bold px-10 py-5 rounded-full text-xl hover:opacity-90 transition-opacity inline-block"
-          >
-            Quiero posicionarme
-          </a>
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden dot-grid">
+        <div className="beam" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
+        <div className="relative z-10 max-w-4xl mx-auto px-5 pt-20 pb-16">
+          <AnimateIn>
+            <div className="badge mb-5 w-fit">SEO</div>
+          </AnimateIn>
+          <AnimateIn delay={60}>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-5">
+              Aparece cuando tus{" "}
+              <span className="text-white/40">clientes te buscan</span>
+            </h1>
+          </AnimateIn>
+          <AnimateIn delay={120}>
+            <p className="text-white/50 text-xl mb-8 max-w-xl">
+              El mejor sitio del mundo no sirve si nadie lo encuentra.
+            </p>
+          </AnimateIn>
+          <AnimateIn delay={180}>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <a
+                href="https://buy.stripe.com/seo500"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-base px-6 py-3"
+              >
+                Quiero posicionarme — USD 500 <ArrowRight size={16} />
+              </a>
+              <Link href="/contacto" className="btn-outline text-base px-6 py-3">
+                Tengo preguntas
+              </Link>
+            </div>
+          </AnimateIn>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-zinc-950">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Qué incluye</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {includes.map((item) => (
-              <div key={item} className="flex items-center gap-3 bg-black border border-white/10 rounded-xl p-4">
-                <CheckCircle size={20} className="text-green-500 flex-shrink-0" />
-                <span className="text-gray-200">{item}</span>
-              </div>
-            ))}
-          </div>
+      <section className="section border-t border-white/[0.06]">
+        <div className="max-w-4xl mx-auto px-5">
+          <AnimateIn className="mb-10">
+            <h2 className="text-3xl font-bold tracking-tight">Qué incluye</h2>
+          </AnimateIn>
+          <AnimateIn stagger>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {includes.map((item) => (
+                <div key={item} className="card flex items-center gap-3 px-5 py-4">
+                  <CheckCircle size={16} className="text-[#97c121] flex-shrink-0" />
+                  <span className="text-white/70 text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
+          </AnimateIn>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-black">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Beneficios</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {benefits.map((b) => (
-              <div key={b.title} className="text-center p-6 rounded-2xl border border-white/10 bg-zinc-950 card-hover">
-                <b.Icon size={36} className="text-green-500 mx-auto mb-4" />
-                <h3 className="text-white font-bold text-lg mb-2">{b.title}</h3>
-                <p className="text-gray-400 text-sm">{b.desc}</p>
-              </div>
-            ))}
-          </div>
+      <section className="section border-t border-white/[0.06]">
+        <div className="max-w-5xl mx-auto px-5">
+          <AnimateIn className="mb-10">
+            <h2 className="text-3xl font-bold tracking-tight">Beneficios</h2>
+          </AnimateIn>
+          <AnimateIn stagger>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {benefits.map((b) => (
+                <div key={b.title} className="card p-6 text-center">
+                  <b.Icon size={24} className="mx-auto mb-4 text-white/30" strokeWidth={1.5} />
+                  <h3 className="text-white font-semibold mb-1.5">{b.title}</h3>
+                  <p className="text-white/40 text-sm">{b.desc}</p>
+                </div>
+              ))}
+            </div>
+          </AnimateIn>
         </div>
       </section>
 
-      <section className="py-24 px-4 bg-gradient-to-b from-zinc-950 to-green-950/30 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-          Si no apareces en Google, estás perdiendo clientes.
-        </h2>
-        <p className="text-gray-400 mb-8 text-lg">
-          Cada día sin SEO es un día ganando tus competidores.
-        </p>
-        <a
-          href="https://buy.stripe.com/seo500"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="gradient-bg text-black font-bold px-10 py-5 rounded-full text-xl hover:opacity-90 transition-opacity inline-block"
-        >
-          Quiero empezar SEO — USD 500
-        </a>
-        <div className="mt-4">
-          <Link href="/contacto" className="text-gray-400 hover:text-green-400 transition-colors text-sm">
-            ¿Tienes preguntas? Hablemos →
-          </Link>
+      <section className="section border-t border-white/[0.06] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_100%,rgba(100,60,200,0.08),transparent)]" />
+        <div className="relative z-10 max-w-3xl mx-auto px-5 text-center">
+          <AnimateIn>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+              Si no apareces en Google, estás perdiendo clientes.
+            </h2>
+            <p className="text-white/40 mb-8">Cada día sin SEO es un día que tus competidores ganan terreno.</p>
+            <a
+              href="https://buy.stripe.com/seo500"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-base px-7 py-3.5 inline-flex"
+            >
+              Quiero empezar SEO — USD 500 <ArrowRight size={16} />
+            </a>
+          </AnimateIn>
         </div>
       </section>
     </>
