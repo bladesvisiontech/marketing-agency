@@ -16,9 +16,9 @@ const en = {
 
   home: {
     badge: "Strategic design · SEO · E-commerce",
-    h1_main: "Your business needs",
-    h1_accent: "more clients.",
-    h1_sub: "Not just an online presence.",
+    h1_main: "Your business deserves",
+    h1_accent: "a website that sells.",
+    h1_sub: "",
     subheadline:
       "We build websites, SEO systems, and e-commerce experiences designed to turn traffic into revenue.",
     cta_primary: "I want to sell more",

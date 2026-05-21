@@ -38,8 +38,12 @@ export default async function HomePage({
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-6">
               {t.h1_main}{" "}
               <span className="gradient-text">{t.h1_accent}</span>
-              <br className="hidden sm:block" />
-              <span className="text-white/50"> {t.h1_sub}</span>
+              {t.h1_sub && (
+                <>
+                  <br className="hidden sm:block" />
+                  <span className="text-white/50"> {t.h1_sub}</span>
+                </>
+              )}
             </h1>
           </AnimateIn>
           <AnimateIn delay={160}>
