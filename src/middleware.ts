@@ -22,17 +22,9 @@ export function middleware(request: NextRequest) {
   );
   if (pathnameHasLocale) return NextResponse.next();
 
-  // Detect locale from cookie first, then Accept-Language header
+  // English is always the default — only switch if user explicitly chose Spanish via cookie
   const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
-  let locale = defaultLocale;
-
-  if (cookieLocale && isValidLocale(cookieLocale)) {
-    locale = cookieLocale;
-  } else {
-    const acceptLang = request.headers.get("accept-language") ?? "";
-    const preferred = acceptLang.split(",")[0].trim().toLowerCase().slice(0, 2);
-    if (isValidLocale(preferred)) locale = preferred;
-  }
+  const locale = cookieLocale && isValidLocale(cookieLocale) ? cookieLocale : defaultLocale;
 
   // Redirect to locale-prefixed URL
   const url = request.nextUrl.clone();
