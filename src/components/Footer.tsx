@@ -1,29 +1,24 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MessageCircle } from "lucide-react";
+import type { Dictionary } from "@/dictionaries/en";
+import type { Locale } from "@/lib/i18n";
 
-const pages = [
-  ["Inicio", "/"],
-  ["Servicios", "/#servicios"],
-  ["Casos", "/#casos"],
-  ["Nosotros", "/nosotros"],
-  ["Contacto", "/contacto"],
-] as const;
+interface FooterProps {
+  dict: Dictionary;
+  locale: Locale;
+}
 
-const services = [
-  ["Websites", "/servicios/websites"],
-  ["SEO", "/servicios/seo"],
-  ["Auditoría Digital", "/servicios/auditoria"],
-  ["E-commerce", "/servicios/ecommerce"],
-] as const;
+export default function Footer({ dict, locale }: FooterProps) {
+  const base = `/${locale}`;
+  const f = dict.footer;
 
-export default function Footer() {
   return (
     <footer className="border-t border-white/[0.06] pt-16 pb-8 px-5">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           <div className="md:col-span-2">
-            <Link href="/" className="inline-flex mb-4">
+            <Link href={base} className="inline-flex mb-4">
               <Image
                 src="/inmotion-logo.svg"
                 alt="Inmotion"
@@ -32,9 +27,7 @@ export default function Footer() {
                 className="h-6 w-auto"
               />
             </Link>
-            <p className="text-white/40 text-sm leading-relaxed max-w-xs">
-              Diseño estratégico, SEO y e-commerce orientados a resultados. Convertimos visitas en clientes.
-            </p>
+            <p className="text-white/40 text-sm leading-relaxed max-w-xs">{f.tagline}</p>
             <div className="mt-5">
               <a
                 href="https://wa.me/1234567890"
@@ -42,17 +35,17 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
               >
-                <MessageCircle size={15} /> WhatsApp
+                <MessageCircle size={15} /> {f.whatsapp_label ?? "WhatsApp"}
               </a>
             </div>
           </div>
 
           <div>
-            <h5 className="text-white/30 text-xs font-medium uppercase tracking-widest mb-4">Páginas</h5>
+            <h5 className="text-white/30 text-xs font-medium uppercase tracking-widest mb-4">{f.pages_title}</h5>
             <ul className="flex flex-col gap-2.5">
-              {pages.map(([label, href]) => (
+              {f.pages.map(([label, path]) => (
                 <li key={label}>
-                  <Link href={href} className="text-white/50 hover:text-white text-sm transition-colors">
+                  <Link href={`${base}${path === "/" ? "" : path}`} className="text-white/50 hover:text-white text-sm transition-colors">
                     {label}
                   </Link>
                 </li>
@@ -61,11 +54,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="text-white/30 text-xs font-medium uppercase tracking-widest mb-4">Servicios</h5>
+            <h5 className="text-white/30 text-xs font-medium uppercase tracking-widest mb-4">{f.services_title}</h5>
             <ul className="flex flex-col gap-2.5">
-              {services.map(([label, href]) => (
+              {f.services.map(([label, path]) => (
                 <li key={label}>
-                  <Link href={href} className="text-white/50 hover:text-white text-sm transition-colors">
+                  <Link href={`${base}${path}`} className="text-white/50 hover:text-white text-sm transition-colors">
                     {label}
                   </Link>
                 </li>
@@ -77,11 +70,9 @@ export default function Footer() {
         <div className="divider mb-6" />
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
           <p className="text-white/25 text-xs">
-            © {new Date().getFullYear()} Inmotion. Todos los derechos reservados.
+            © {new Date().getFullYear()} Inmotion. {f.rights}
           </p>
-          <p className="text-white/25 text-xs">
-            Diseñado para convertir.
-          </p>
+          <p className="text-white/25 text-xs">{f.designed}</p>
         </div>
       </div>
     </footer>
