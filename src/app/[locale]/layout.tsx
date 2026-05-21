@@ -47,7 +47,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${geist.variable} scroll-smooth`}>
       <body className="bg-black text-white antialiased min-h-full flex flex-col">
         <Header dict={dict} locale={locale as Locale} />
-        <main className="pt-14 flex-1">{children}</main>
+        <main className="pt-14 pb-20 md:pb-0 flex-1">{children}</main>
         <Footer dict={dict} locale={locale as Locale} />
         <WhatsAppButton />
       </body>
