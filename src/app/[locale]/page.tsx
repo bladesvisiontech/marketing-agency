@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { CheckCircle, TrendingUp, Globe, Search, ShoppingCart, ClipboardCheck, ArrowRight, Star, Zap } from "lucide-react";
+import { CheckCircle, TrendingUp, Search, ArrowRight, Star, Zap } from "lucide-react";
+import Image from "next/image";
 import AnimateIn from "@/components/AnimateIn";
 import { getDictionary, isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
-const serviceIcons = [Globe, Search, ClipboardCheck, ShoppingCart];
+const serviceIconSrcs = ["/icons/web.png", "/icons/search.png", "/icons/task.png", "/icons/cart.png"];
 const benefitIcons = [Star, TrendingUp, Search, Zap];
 
 export default async function HomePage({
@@ -134,10 +135,9 @@ export default async function HomePage({
           <AnimateIn stagger>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {t.services.map((s, i) => {
-                const Icon = serviceIcons[i];
                 return (
                   <div key={s.title} className="card p-6 flex flex-col">
-                    <Icon size={24} className="text-white/40 mb-5" strokeWidth={1.5} />
+                    <Image src={serviceIconSrcs[i]} alt={s.title} width={64} height={64} className="mb-5 w-16 h-16 object-contain" />
                     <h3 className="text-white font-semibold text-base mb-0.5">{s.title}</h3>
                     <p className="gradient-text font-bold text-xl mb-3">{s.price}</p>
                     <p className="text-white/40 text-sm flex-1 mb-5 leading-relaxed">{s.desc}</p>

@@ -7,7 +7,7 @@ const FROM_EMAIL = "Inmotion <info@inmotionteam.com>";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, company, email, goal, locale } = body;
+    const { name, company, email, goal, phone, comments, locale } = body;
 
     if (!name || !email || !goal) {
       return Response.json({ error: "Missing required fields" }, { status: 400 });
@@ -42,9 +42,17 @@ export async function POST(request: Request) {
             <td style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:14px;"><a href="mailto:${email}" style="color:#97c121;">${email}</a></td>
           </tr>
           <tr>
-            <td style="padding:10px 0;color:rgba(255,255,255,0.4);font-size:12px;text-transform:uppercase;letter-spacing:0.08em;">${isEs ? "Objetivo" : "Goal"}</td>
-            <td style="padding:10px 0;color:#fff;font-size:14px;">${goal}</td>
+            <td style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.4);font-size:12px;text-transform:uppercase;letter-spacing:0.08em;">${isEs ? "Objetivo" : "Goal"}</td>
+            <td style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#fff;font-size:14px;">${goal}</td>
           </tr>
+          ${phone ? `<tr>
+            <td style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.4);font-size:12px;text-transform:uppercase;letter-spacing:0.08em;">${isEs ? "Teléfono" : "Phone"}</td>
+            <td style="padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#fff;font-size:14px;"><a href="tel:${phone}" style="color:#97c121;">${phone}</a></td>
+          </tr>` : ""}
+          ${comments ? `<tr>
+            <td style="padding:10px 0;color:rgba(255,255,255,0.4);font-size:12px;text-transform:uppercase;letter-spacing:0.08em;">${isEs ? "Detalles" : "Details"}</td>
+            <td style="padding:10px 0;color:#fff;font-size:14px;">${comments}</td>
+          </tr>` : ""}
         </table>
         <div style="margin-top:28px;">
           <a href="mailto:${email}" style="display:inline-block;background:#fff;color:#000;font-weight:700;font-size:13px;padding:12px 24px;border-radius:8px;text-decoration:none;">${isEs ? "Responder" : "Reply"} →</a>

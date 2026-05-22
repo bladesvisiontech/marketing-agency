@@ -13,12 +13,12 @@ export default function ContactPage() {
   const dict = locale === "es" ? es : en;
   const t = dict.contact;
 
-  const [form, setForm] = useState({ name: "", company: "", email: "", goal: "" });
+  const [form, setForm] = useState({ name: "", company: "", email: "", goal: "", phone: "", comments: "" });
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
@@ -51,6 +51,7 @@ export default function ContactPage() {
     { name: "name",    label: t.fields.name,    type: "text",  placeholder: "John Smith",          required: true  },
     { name: "company", label: t.fields.company,  type: "text",  placeholder: "Acme Inc.",           required: false },
     { name: "email",   label: t.fields.email,    type: "email", placeholder: "you@company.com",     required: true  },
+    { name: "phone",   label: t.fields.phone,    type: "tel",   placeholder: "+1 832 000 0000",     required: false },
   ];
 
   return (
@@ -109,6 +110,20 @@ export default function ContactPage() {
                     <option key={g} value={g} className="bg-black">{g}</option>
                   ))}
                 </select>
+              </div>
+
+              <div>
+                <label className="block text-white/40 text-xs font-medium uppercase tracking-wide mb-2">
+                  {t.fields.comments}
+                </label>
+                <textarea
+                  name="comments"
+                  value={form.comments}
+                  onChange={handleChange}
+                  placeholder={t.fields.comments_placeholder}
+                  rows={4}
+                  className="w-full bg-white/[0.03] border border-white/[0.08] rounded-lg px-4 py-3 text-white placeholder-white/20 text-sm focus:outline-none focus:border-white/20 transition-colors resize-none"
+                />
               </div>
 
               {error && (
