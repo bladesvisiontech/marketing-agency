@@ -17,38 +17,48 @@ export default function Footer({ dict, locale }: FooterProps) {
       <Image src="/footer.jpg" alt="" fill className="object-cover object-center opacity-10 pointer-events-none select-none" priority={false} />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/60 pointer-events-none" />
       <div className="relative z-10 max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          <div className="md:col-span-2">
-            <Link href={base} className="inline-flex mb-4">
+        {/* Top: logo + email big + nav links */}
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 mb-16">
+          {/* Left — logo, tagline, big email */}
+          <div className="flex flex-col gap-4">
+            <Link href={base} className="inline-flex">
               <Image src="/inmotion-logo.svg" alt="Inmotion" width={110} height={30} className="h-6 w-auto" />
             </Link>
-            <p className="text-white/40 text-sm leading-relaxed max-w-xs">{f.tagline}</p>
+            <p className="text-white/40 text-sm">{f.tagline}</p>
+            <a
+              href="mailto:info@inmotionteam.com"
+              className="text-3xl md:text-5xl font-bold text-white hover:text-white/80 transition-colors tracking-tight mt-2"
+            >
+              info@inmotionteam.com
+            </a>
           </div>
 
-          <div>
-            <h5 className="text-white/30 text-xs font-medium uppercase tracking-widest mb-4">{f.pages_title}</h5>
-            <ul className="flex flex-col gap-2.5">
-              {f.pages.map(([label, path]) => (
-                <li key={label}>
-                  <Link href={`${base}${path === "/" ? "" : path}`} className="text-white/50 hover:text-white text-sm transition-colors">
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h5 className="text-white/30 text-xs font-medium uppercase tracking-widest mb-4">{f.services_title}</h5>
-            <ul className="flex flex-col gap-2.5">
-              {f.services.map(([label, path]) => (
-                <li key={label}>
-                  <Link href={`${base}${path}`} className="text-white/50 hover:text-white text-sm transition-colors">
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* Right — nav columns */}
+          <div className="flex gap-12 shrink-0">
+            <div>
+              <h5 className="text-white/30 text-xs font-medium uppercase tracking-widest mb-4">{f.pages_title}</h5>
+              <ul className="flex flex-col gap-2.5">
+                {f.pages.map(([label, path]) => (
+                  <li key={label}>
+                    <Link href={`${base}${path === "/" ? "" : path}`} className="text-white/50 hover:text-white text-sm transition-colors">
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h5 className="text-white/30 text-xs font-medium uppercase tracking-widest mb-4">{f.services_title}</h5>
+              <ul className="flex flex-col gap-2.5">
+                {f.services.map(([label, path]) => (
+                  <li key={label}>
+                    <Link href={`${base}${path}`} className="text-white/50 hover:text-white text-sm transition-colors">
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
