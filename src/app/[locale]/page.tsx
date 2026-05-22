@@ -244,7 +244,7 @@ export default async function HomePage({
 
             {/* Video */}
             <div className="flex-1 rounded-xl overflow-hidden bg-white/[0.03] border border-white/[0.06] aspect-video">
-              <video src="/work/bladesvision.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+              <video autoPlay loop muted playsInline className="w-full h-full object-cover"><source src="/work/bladesvision.mp4" type="video/mp4" /></video>
             </div>
           </AnimateIn>
 
@@ -269,7 +269,7 @@ export default async function HomePage({
 
             {/* Video */}
             <div className="flex-1 rounded-xl overflow-hidden bg-white/[0.03] border border-white/[0.06] aspect-video">
-              <video src="/work/kkdavenue.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+              <video autoPlay loop muted playsInline className="w-full h-full object-cover"><source src="/work/kkdavenue.mp4" type="video/mp4" /></video>
             </div>
           </AnimateIn>
         </div>
