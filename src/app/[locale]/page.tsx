@@ -24,53 +24,88 @@ export default async function HomePage({
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden dot-grid">
+      <section className="relative min-h-screen flex items-center overflow-hidden dot-grid">
         <div className="beam" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(100,60,200,0.1),transparent_70%)]" />
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
-        <div className="relative z-10 max-w-5xl mx-auto px-5 text-center">
-          <AnimateIn>
-            <div className="badge mb-6 mx-auto w-fit">
-              <span className="glow-dot" />
-              {t.badge}
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-5 py-20 flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
+
+          {/* LEFT — text */}
+          <div className="flex-1 text-center lg:text-left">
+            <AnimateIn>
+              <div className="badge mb-6 lg:mx-0 mx-auto w-fit">
+                <span className="glow-dot" />
+                {t.badge}
+              </div>
+            </AnimateIn>
+            <AnimateIn delay={80}>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-6">
+                {t.h1_main}{" "}
+                <span className="gradient-text">{t.h1_accent}</span>
+                {t.h1_sub && (
+                  <>
+                    <br className="hidden sm:block" />
+                    <span className="text-white/50"> {t.h1_sub}</span>
+                  </>
+                )}
+              </h1>
+            </AnimateIn>
+            <AnimateIn delay={160}>
+              <p className="text-white/50 text-lg md:text-xl max-w-xl lg:mx-0 mx-auto mb-8 leading-relaxed">
+                {t.subheadline}
+              </p>
+            </AnimateIn>
+            <AnimateIn delay={240}>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-10">
+                <Link href={`${base}/contact`} className="btn-primary text-base px-6 py-3">
+                  {t.cta_primary} <ArrowRight size={16} />
+                </Link>
+                <Link href={`${base}/#services`} className="btn-outline text-base px-6 py-3">
+                  {t.cta_secondary}
+                </Link>
+              </div>
+            </AnimateIn>
+            <AnimateIn delay={320}>
+              <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-white/35 text-sm">
+                {t.microcopy.map((item) => (
+                  <span key={item} className="flex items-center gap-1.5">
+                    <CheckCircle size={13} className="text-[#97c121]" /> {item}
+                  </span>
+                ))}
+              </div>
+            </AnimateIn>
+          </div>
+
+          {/* RIGHT — hero image with floating tags */}
+          <AnimateIn delay={200} className="flex-1 relative flex items-center justify-center w-full max-w-lg lg:max-w-none">
+            <div className="relative w-full max-w-[520px] mx-auto">
+              <Image
+                src="/hero-image.png"
+                alt="Inmotion services"
+                width={520}
+                height={520}
+                className="w-full h-auto drop-shadow-2xl"
+                priority
+              />
+              {/* Floating tags */}
+              <span className="absolute top-[8%] left-[10%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#97c121]" /> Sales
+              </span>
+              <span className="absolute top-[4%] right-[12%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#1b4fd8]" /> Automation
+              </span>
+              <span className="absolute top-[42%] right-[4%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#9b27f9]" /> AI
+              </span>
+              <span className="absolute bottom-[28%] left-[2%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#97c121]" /> Marketing
+              </span>
+              <span className="absolute bottom-[12%] left-[18%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#1b4fd8]" /> Self Manage
+              </span>
             </div>
           </AnimateIn>
-          <AnimateIn delay={80}>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-6">
-              {t.h1_main}{" "}
-              <span className="gradient-text">{t.h1_accent}</span>
-              {t.h1_sub && (
-                <>
-                  <br className="hidden sm:block" />
-                  <span className="text-white/50"> {t.h1_sub}</span>
-                </>
-              )}
-            </h1>
-          </AnimateIn>
-          <AnimateIn delay={160}>
-            <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
-              {t.subheadline}
-            </p>
-          </AnimateIn>
-          <AnimateIn delay={240}>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-10">
-              <Link href={`${base}/contact`} className="btn-primary text-base px-6 py-3">
-                {t.cta_primary} <ArrowRight size={16} />
-              </Link>
-              <Link href={`${base}/#services`} className="btn-outline text-base px-6 py-3">
-                {t.cta_secondary}
-              </Link>
-            </div>
-          </AnimateIn>
-          <AnimateIn delay={320}>
-            <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-white/35 text-sm">
-              {t.microcopy.map((item) => (
-                <span key={item} className="flex items-center gap-1.5">
-                  <CheckCircle size={13} className="text-[#97c121]" /> {item}
-                </span>
-              ))}
-            </div>
-          </AnimateIn>
+
         </div>
       </section>
 
