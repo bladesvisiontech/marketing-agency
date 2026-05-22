@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { CheckCircle, TrendingUp, Search, ArrowRight, Star, Zap } from "lucide-react";
+import { TrendingUp, Search, ArrowRight, Star, Zap } from "lucide-react";
 import Image from "next/image";
 import AnimateIn from "@/components/AnimateIn";
 import { getDictionary, isValidLocale } from "@/lib/i18n";
@@ -33,10 +33,7 @@ export default async function HomePage({
           {/* LEFT — text */}
           <div className="flex-1 text-center lg:text-left">
             <AnimateIn>
-              <div className="badge mb-6 lg:mx-0 mx-auto w-fit">
-                <span className="glow-dot" />
-                {t.badge}
-              </div>
+              <div className="h-6" />
             </AnimateIn>
             <AnimateIn delay={80}>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-6">
@@ -65,15 +62,6 @@ export default async function HomePage({
                 </Link>
               </div>
             </AnimateIn>
-            <AnimateIn delay={320}>
-              <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-white/35 text-sm">
-                {t.microcopy.map((item) => (
-                  <span key={item} className="flex items-center gap-1.5">
-                    <CheckCircle size={13} className="text-[#97c121]" /> {item}
-                  </span>
-                ))}
-              </div>
-            </AnimateIn>
           </div>
 
           {/* RIGHT — hero image with floating tags */}
@@ -89,19 +77,19 @@ export default async function HomePage({
               />
               {/* Floating tags */}
               <span className="absolute top-[8%] left-[10%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#97c121]" /> Sales
+                <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#97c121] opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-[#97c121]" /></span> Sales
               </span>
               <span className="absolute top-[4%] right-[12%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#1b4fd8]" /> Automation
+                <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1b4fd8] opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-[#1b4fd8]" /></span> Automation
               </span>
               <span className="absolute top-[42%] right-[4%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#9b27f9]" /> AI
+                <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#9b27f9] opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-[#9b27f9]" /></span> AI
               </span>
               <span className="absolute bottom-[28%] left-[2%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#97c121]" /> Marketing
+                <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#97c121] opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-[#97c121]" /></span> Marketing
               </span>
               <span className="absolute bottom-[12%] left-[18%] flex items-center gap-2 bg-black/80 border border-white/10 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-medium text-white shadow-lg">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#1b4fd8]" /> Self Manage
+                <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1b4fd8] opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-[#1b4fd8]" /></span> Self Manage
               </span>
             </div>
           </AnimateIn>
