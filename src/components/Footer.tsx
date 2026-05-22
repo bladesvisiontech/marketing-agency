@@ -14,7 +14,7 @@ export default function Footer({ dict, locale }: FooterProps) {
 
   return (
     <footer className="relative border-t border-white/[0.06] pt-16 pb-8 px-5 overflow-hidden">
-      <Image src="/footer.jpg" alt="" fill className="object-cover object-center opacity-40 pointer-events-none select-none" priority={false} />
+      <Image src="/footer.jpg" alt="" fill className="object-cover object-top opacity-50 pointer-events-none select-none" priority={false} />
       <div className="absolute inset-0 bg-black/30 pointer-events-none" />
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Top: logo + email big + nav links */}

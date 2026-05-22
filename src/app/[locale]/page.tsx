@@ -244,12 +244,7 @@ export default async function HomePage({
 
             {/* Video */}
             <div className="flex-1 rounded-xl overflow-hidden bg-white/[0.03] border border-white/[0.06] aspect-video">
-              <iframe
-                src="https://www.youtube.com/embed/qTY4TRnMwrM?autoplay=1&mute=1&loop=1&playlist=qTY4TRnMwrM&controls=0&modestbranding=1&rel=0"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                className="w-full h-full"
-              />
+              <video src="/work/bladesvision.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
             </div>
           </AnimateIn>
 
@@ -274,12 +269,7 @@ export default async function HomePage({
 
             {/* Video */}
             <div className="flex-1 rounded-xl overflow-hidden bg-white/[0.03] border border-white/[0.06] aspect-video">
-              <iframe
-                src="https://www.youtube.com/embed/pkb5TzUc8A0?autoplay=1&mute=1&loop=1&playlist=pkb5TzUc8A0&controls=0&modestbranding=1&rel=0"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                className="w-full h-full"
-              />
+              <video src="/work/kkdavenue.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
             </div>
           </AnimateIn>
         </div>
