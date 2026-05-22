@@ -13,8 +13,10 @@ export default function Footer({ dict, locale }: FooterProps) {
   const f = dict.footer;
 
   return (
-    <footer className="border-t border-white/[0.06] pt-16 pb-8 px-5">
-      <div className="max-w-6xl mx-auto">
+    <footer className="relative border-t border-white/[0.06] pt-16 pb-8 px-5 overflow-hidden">
+      <Image src="/footer.jpg" alt="" fill className="object-cover object-center opacity-10 pointer-events-none select-none" priority={false} />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/60 pointer-events-none" />
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           <div className="md:col-span-2">
             <Link href={base} className="inline-flex mb-4">
@@ -57,5 +59,6 @@ export default function Footer({ dict, locale }: FooterProps) {
         </div>
       </div>
     </footer>
+
   );
 }

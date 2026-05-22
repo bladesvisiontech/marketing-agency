@@ -250,14 +250,20 @@ export default async function HomePage({
           <AnimateIn stagger>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {t.testimonials.map((test) => (
-                <div key={test.quote} className="card p-7">
+                <div key={test.quote} className="card p-7 flex flex-col">
                   <div className="flex gap-0.5 mb-5">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} size={13} className="text-[#97c121] fill-[#97c121]" />
                     ))}
                   </div>
-                  <p className="text-white/80 text-base leading-relaxed mb-5">&quot;{test.quote}&quot;</p>
-                  <p className="text-white/25 text-sm">{test.author}</p>
+                  <p className="text-white/80 text-base leading-relaxed mb-6 flex-1">&quot;{test.quote}&quot;</p>
+                  <div className="flex items-center gap-3">
+                    <Image src={test.avatar} alt={test.author} width={40} height={40} className="w-10 h-10 rounded-full object-cover ring-1 ring-white/10" />
+                    <div>
+                      <p className="text-white text-sm font-medium">{test.author}</p>
+                      <p className="text-white/30 text-xs">{test.company}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>

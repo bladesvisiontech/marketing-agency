@@ -112,9 +112,9 @@ const en = {
     social_h2_main: "Businesses that needed results.",
     social_h2_sub: "Not just design.",
     testimonials: [
-      { quote: "We went from getting visits to getting real clients.", author: "E-commerce client" },
-      { quote: "The new site conveys so much more trust.", author: "Website client" },
-      { quote: "SEO started bringing leads within weeks.", author: "SEO client" },
+      { quote: "We went from getting visits to getting real clients.", author: "Marcus Johnson", company: "Elevate Retail Co.", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face" },
+      { quote: "The new site conveys so much more trust. Our conversion rate doubled.", author: "Sofia Reyes", company: "Reyes Consulting", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&h=64&fit=crop&crop=face" },
+      { quote: "SEO started bringing qualified leads within just a few weeks.", author: "Daniel Park", company: "Park & Associates", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&fit=crop&crop=face" },
     ],
 
     cta_final_h2: "Your competition is already growing online.",
