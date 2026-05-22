@@ -215,6 +215,80 @@ export default async function HomePage({
         </div>
       </section>
 
+      {/* OUR WORK */}
+      <section className="border-t border-white/[0.06]">
+        <div className="max-w-7xl mx-auto px-5 py-20">
+          <AnimateIn className="mb-16">
+            <div className="badge mb-4 w-fit">Our work</div>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Results we&apos;ve delivered.</h2>
+          </AnimateIn>
+
+          {/* Case 01 */}
+          <AnimateIn className="flex flex-col lg:flex-row gap-8 mb-6 border-t border-white/[0.06] pt-10">
+            {/* Sidebar */}
+            <div className="lg:w-64 shrink-0 flex flex-col justify-between gap-6">
+              <div>
+                <span className="text-white/20 text-xs font-mono mb-4 block">01</span>
+                <h3 className="text-white font-bold text-xl mb-3">Blades Vision</h3>
+                <p className="text-white/40 text-sm leading-relaxed mb-5">Full website design, development &amp; local SEO for a barbershop in Houston, TX. Ranked on Google page 1 for local searches within 60 days.</p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {["Web Design", "Local SEO", "Google Optimization"].map((tag) => (
+                    <span key={tag} className="text-white/40 border border-white/[0.1] rounded-full px-3 py-1 text-xs">{tag}</span>
+                  ))}
+                </div>
+              </div>
+              <a href="https://www.bladesvision.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/50 hover:text-white transition-colors flex items-center gap-1.5">
+                View live site <ArrowRight size={13} />
+              </a>
+            </div>
+
+            {/* Video */}
+            <div className="flex-1 rounded-xl overflow-hidden bg-white/[0.03] border border-white/[0.06] aspect-video">
+              <video
+                src="/work/bladesvision.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </AnimateIn>
+
+          {/* Case 02 */}
+          <AnimateIn className="flex flex-col lg:flex-row gap-8 border-t border-white/[0.06] pt-10">
+            {/* Sidebar */}
+            <div className="lg:w-64 shrink-0 flex flex-col justify-between gap-6">
+              <div>
+                <span className="text-white/20 text-xs font-mono mb-4 block">02</span>
+                <h3 className="text-white font-bold text-xl mb-3">KKD Avenue</h3>
+                <p className="text-white/40 text-sm leading-relaxed mb-5">Website design + SEO strategy for a retail brand. Custom design aligned with the brand identity, fully optimized for search from launch.</p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {["Web Design", "SEO", "Digital Strategy"].map((tag) => (
+                    <span key={tag} className="text-white/40 border border-white/[0.1] rounded-full px-3 py-1 text-xs">{tag}</span>
+                  ))}
+                </div>
+              </div>
+              <a href="https://www.kkdavenuehtx.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/50 hover:text-white transition-colors flex items-center gap-1.5">
+                View live site <ArrowRight size={13} />
+              </a>
+            </div>
+
+            {/* Video */}
+            <div className="flex-1 rounded-xl overflow-hidden bg-white/[0.03] border border-white/[0.06] aspect-video">
+              <video
+                src="/work/kkdavenue.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </AnimateIn>
+        </div>
+      </section>
+
       {/* PROCESS */}
       <section className="section border-t border-white/[0.06]">
         <div className="max-w-6xl mx-auto px-5">
