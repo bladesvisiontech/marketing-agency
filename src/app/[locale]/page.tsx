@@ -160,7 +160,7 @@ export default async function HomePage({
               {t.services.map((s, i) => {
                 return (
                   <div key={s.title} className="card p-6 flex flex-col">
-                    <Image src={serviceIconSrcs[i]} alt={s.title} width={64} height={64} className="mb-5 w-16 h-16 object-contain" />
+                    <Image src={serviceIconSrcs[i]} alt={s.title} width={100} height={100} className="mb-5 w-[100px] h-[100px] object-contain" />
                     <h3 className="text-white font-semibold text-base mb-0.5">{s.title}</h3>
                     <p className="gradient-text font-bold text-xl mb-3">{s.price}</p>
                     <p className="text-white/40 text-sm flex-1 mb-5 leading-relaxed">{s.desc}</p>
@@ -244,13 +244,11 @@ export default async function HomePage({
 
             {/* Video */}
             <div className="flex-1 rounded-xl overflow-hidden bg-white/[0.03] border border-white/[0.06] aspect-video">
-              <video
-                src="/work/bladesvision.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover"
+              <iframe
+                src="https://www.youtube.com/embed/qTY4TRnMwrM?autoplay=1&mute=1&loop=1&playlist=qTY4TRnMwrM&controls=0&modestbranding=1&rel=0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                className="w-full h-full"
               />
             </div>
           </AnimateIn>
@@ -276,13 +274,11 @@ export default async function HomePage({
 
             {/* Video */}
             <div className="flex-1 rounded-xl overflow-hidden bg-white/[0.03] border border-white/[0.06] aspect-video">
-              <video
-                src="/work/kkdavenue.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover"
+              <iframe
+                src="https://www.youtube.com/embed/pkb5TzUc8A0?autoplay=1&mute=1&loop=1&playlist=pkb5TzUc8A0&controls=0&modestbranding=1&rel=0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                className="w-full h-full"
               />
             </div>
           </AnimateIn>
