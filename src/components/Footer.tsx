@@ -14,8 +14,8 @@ export default function Footer({ dict, locale }: FooterProps) {
 
   return (
     <footer className="relative border-t border-white/[0.06] pt-16 pb-8 px-5 overflow-hidden">
-      <Image src="/footer.jpg" alt="" fill className="object-cover object-center opacity-10 pointer-events-none select-none" priority={false} />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/60 pointer-events-none" />
+      <Image src="/footer.jpg" alt="" fill className="object-cover object-center opacity-30 pointer-events-none select-none" priority={false} />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40 pointer-events-none" />
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Top: logo + email big + nav links */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 mb-16">
