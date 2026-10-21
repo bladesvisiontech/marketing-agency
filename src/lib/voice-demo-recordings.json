@@ -162,5 +162,117 @@
       }
     ],
     "callId": "call_56ae59bbf8ed02e359e582f1b9b"
+  },
+  "barberia-es": {
+    "src": "/voice-demo/barberia-es.m4a",
+    "duration": 91.6,
+    "transcript": [
+      {
+        "start": 0.48,
+        "role": "agent",
+        "text": "¡Qué tal! Gracias por llamar a Corte Fino Barber Studio. ¿Quiere agendar un corte?"
+      },
+      {
+        "start": 6.43,
+        "role": "caller",
+        "text": "Sí, quiero arreglarme también la barba."
+      },
+      {
+        "start": 10.36,
+        "role": "agent",
+        "text": "Perfecto. ¿Prefiere que sea para mañana jueves o el viernes?  Tengo buenos horarios para ambos días."
+      },
+      {
+        "start": 16.14,
+        "role": "caller",
+        "text": "No, la verdad es que me serviría para hoy a las siete de la noche, ¿Hay algún barbero disponible?"
+      },
+      {
+        "start": 21.79,
+        "role": "agent",
+        "text": "Déjeme ver, hoy a las siete de la noche todavía tengo espacio.  ¿Quiere que lo atienda Luis, Andrés o Kevin, o le da igual?"
+      },
+      {
+        "start": 28.79,
+        "role": "caller",
+        "text": "La verdad, siempre me corto con Kevin y me gusta cómo me."
+      },
+      {
+        "start": 35.31,
+        "role": "agent",
+        "text": "Perfecto, lo agendo con Kevin para hoy a las siete.  Solo me falta su nombre y un teléfono para confirmar."
+      },
+      {
+        "start": 41.31,
+        "role": "caller",
+        "text": "Claro que sí, mi nombre es Carlos Méndez, mi teléfono es setecientos trece cinco cinco cinco cero uno cuarenta y cuatro."
+      },
+      {
+        "start": 49.16,
+        "role": "agent",
+        "text": "Listo, Carlos.  Ya quedó agendado con Kevin para hoy a las siete.  Le va a"
+      },
+      {
+        "start": 52.88,
+        "role": "caller",
+        "text": "Dale, ¿me me"
+      },
+      {
+        "start": 52.81,
+        "role": "agent",
+        "text": "llegar un mensaje de"
+      },
+      {
+        "start": 53.84,
+        "role": "caller",
+        "text": "podrías me podrías enviar la dirección Lo que sucede es que no la tengo y, además, me saber el precio."
+      },
+      {
+        "start": 61.21,
+        "role": "agent",
+        "text": "Claro, la dirección es Houston, Texas.  Y el corte y arreglo de barba con Kevin cuesta cincuenta dólares.  ¿Le mando la ubicación por mensaje de texto?"
+      },
+      {
+        "start": 69.95,
+        "role": "caller",
+        "text": "Sí, estaría bien. ¿Cuántos dólares me dijiste que valía, perdón?"
+      },
+      {
+        "start": 73.75,
+        "role": "agent",
+        "text": "Son cincuenta dólares.   Ya le"
+      },
+      {
+        "start": 75.4,
+        "role": "caller",
+        "text": "Con el"
+      },
+      {
+        "start": 75.3,
+        "role": "agent",
+        "text": "mando la ubicación por mensaje.   Nos vemos"
+      },
+      {
+        "start": 76.73,
+        "role": "caller",
+        "text": "incluye, es decir, corte y barba, perdóname,"
+      },
+      {
+        "start": 82.03,
+        "role": "agent",
+        "text": "Sí, no se preocupe.  Los cincuenta dólares ya incluyen el corte y la barba con Kevin."
+      },
+      {
+        "start": 87.64,
+        "role": "caller",
+        "text": "Oh, perfecto, dale, sí."
+      },
+      {
+        "start": 90.21,
+        "role": "agent",
+        "text": "Listo, Carlos. Lo"
+      }
+    ],
+    "callId": "call_ddb14ece9d0faa39b08fb796c95"
   }
 }
