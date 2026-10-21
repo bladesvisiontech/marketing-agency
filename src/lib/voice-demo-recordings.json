@@ -165,114 +165,99 @@
   },
   "barberia-es": {
     "src": "/voice-demo/barberia-es.m4a",
-    "duration": 91.6,
+    "duration": 85.7,
     "transcript": [
       {
-        "start": 0.48,
+        "start": 0.46,
         "role": "agent",
         "text": "¡Qué tal! Gracias por llamar a Corte Fino Barber Studio. ¿Quiere agendar un corte?"
       },
       {
-        "start": 6.43,
+        "start": 5.58,
         "role": "caller",
-        "text": "Sí, quiero arreglarme también la barba."
+        "text": "Hola, buenas tardes. Quiero agendar un fade con Luis para mañana, en la tarde, si es posible."
       },
       {
-        "start": 10.36,
+        "start": 11.46,
         "role": "agent",
-        "text": "Perfecto. ¿Prefiere que sea para mañana jueves o el viernes?  Tengo buenos horarios para ambos días."
+        "text": "Perfecto, mañana jueves en la tarde con Luis.  Tengo dos huecos: a las cuatro y media o a las seis.  ¿Cuál le queda mejor?"
       },
       {
-        "start": 16.14,
+        "start": 18.7,
         "role": "caller",
-        "text": "No, la verdad es que me serviría para hoy a las siete de la noche, ¿Hay algún barbero disponible?"
+        "text": "El espacio de las seis está mejor porque salgo a esa hora del trabajo."
       },
       {
-        "start": 21.79,
+        "start": 23.33,
         "role": "agent",
-        "text": "Déjeme ver, hoy a las siete de la noche todavía tengo espacio.  ¿Quiere que lo atienda Luis, Andrés o Kevin, o le da igual?"
+        "text": "Listo, le agendo el fade con Luis para mañana a las seis.  ¿Me da"
       },
       {
-        "start": 28.79,
+        "start": 26.66,
         "role": "caller",
-        "text": "La verdad, siempre me corto con Kevin y me gusta cómo me."
+        "text": "Vale. ¿Y y"
       },
       {
-        "start": 35.31,
+        "start": 26.61,
         "role": "agent",
-        "text": "Perfecto, lo agendo con Kevin para hoy a las siete.  Solo me falta su nombre y un teléfono para confirmar."
+        "text": "su nombre y un teléfono para mandarle la"
       },
       {
-        "start": 41.31,
+        "start": 28.26,
         "role": "caller",
-        "text": "Claro que sí, mi nombre es Carlos Méndez, mi teléfono es setecientos trece cinco cinco cinco cero uno cuarenta y cuatro."
+        "text": "discúlpame, ¿cuánto cuánto me saldría si también me arreglan la barba?"
       },
       {
-        "start": 49.16,
+        "start": 33.84,
         "role": "agent",
-        "text": "Listo, Carlos.  Ya quedó agendado con Kevin para hoy a las siete.  Le va a"
+        "text": "No se preocupe, le digo: el corte fade y barba con Luis le salen en cincuenta dólares en total.  ¿Quiere"
       },
       {
-        "start": 52.88,
+        "start": 39.98,
         "role": "caller",
-        "text": "Dale, ¿me me"
+        "text": "Oh, perfecto."
       },
       {
-        "start": 52.81,
+        "start": 39.95,
         "role": "agent",
-        "text": "llegar un mensaje de"
+        "text": "que lo agendemos así, corte y barba?"
       },
       {
-        "start": 53.84,
+        "start": 43.12,
+        "role": "agent",
+        "text": "Listo, entonces le"
+      },
+      {
+        "start": 42.75,
         "role": "caller",
-        "text": "podrías me podrías enviar la dirección Lo que sucede es que no la tengo y, además, me saber el precio."
+        "text": "Sí, pero me gustaría también saber si si otro día tengo que reservar o puedo llegar así nomás."
       },
       {
-        "start": 61.21,
+        "start": 50.86,
         "role": "agent",
-        "text": "Claro, la dirección es Houston, Texas.  Y el corte y arreglo de barba con Kevin cuesta cincuenta dólares.  ¿Le mando la ubicación por mensaje de texto?"
+        "text": "Puede llegar sin cita, aceptamos walk-ins, pero la espera suele ser de veinte a cuarenta minutos.  Si quiere evitar la espera, siempre es mejor reservar.  ¿Me da su nombre y un número para confirmar la cita de mañana?"
       },
       {
-        "start": 69.95,
+        "start": 62.96,
         "role": "caller",
-        "text": "Sí, estaría bien. ¿Cuántos dólares me dijiste que valía, perdón?"
+        "text": "Claro, es Carlos Méndez. El número de teléfono es siete trece cinco cincuenta y cinco, cero uno cuarenta y cuatro."
       },
       {
-        "start": 73.75,
+        "start": 70.04,
         "role": "agent",
-        "text": "Son cincuenta dólares.   Ya le"
+        "text": "Listo, Carlos.  Ya quedó agendado para mañana a las seis con Luis, para corte fade y barba.  Le va a llegar un mensaje de confirmación.  ¡Nos vemos mañana!"
       },
       {
-        "start": 75.4,
+        "start": 78.73,
         "role": "caller",
-        "text": "Con el"
+        "text": "Gracias, nos vemos mañana."
       },
       {
-        "start": 75.3,
+        "start": 81.59,
         "role": "agent",
-        "text": "mando la ubicación por mensaje.   Nos vemos"
-      },
-      {
-        "start": 76.73,
-        "role": "caller",
-        "text": "incluye, es decir, corte y barba, perdóname,"
-      },
-      {
-        "start": 82.03,
-        "role": "agent",
-        "text": "Sí, no se preocupe.  Los cincuenta dólares ya incluyen el corte y la barba con Kevin."
-      },
-      {
-        "start": 87.64,
-        "role": "caller",
-        "text": "Oh, perfecto, dale, sí."
-      },
-      {
-        "start": 90.21,
-        "role": "agent",
-        "text": "Listo, Carlos. Lo"
+        "text": "Gracias a usted, Carlos. Que tenga buena tarde, nos vemos mañana. Hasta luego."
       }
     ],
-    "callId": "call_ddb14ece9d0faa39b08fb796c95"
+    "callId": "call_33ee917736dd93e9555ae5a49bb"
   }
 }
