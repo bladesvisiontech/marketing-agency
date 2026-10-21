@@ -533,5 +533,77 @@
       }
     ],
     "callId": "call_ccbbf1332e7a3d4df7304ee761c"
+  },
+  "contador-en": {
+    "src": "/voice-demo/contador-en.m4a",
+    "duration": 77.3,
+    "transcript": [
+      {
+        "start": 0.4,
+        "role": "agent",
+        "text": "Hi, thank you for calling Bayou City Tax & Accounting. How can I help?"
+      },
+      {
+        "start": 5.6,
+        "role": "caller",
+        "text": "Hi. I need to get my taxes done. I'm self employed. I do landscaping."
+      },
+      {
+        "start": 11.66,
+        "role": "agent",
+        "text": "We can definitely help with that.  For self-employed returns, the fee starts at three hundred dollars.  Do you want to come in this week or next?"
+      },
+      {
+        "start": 21.69,
+        "role": "caller",
+        "text": "This way, it should be okay."
+      },
+      {
+        "start": 24.14,
+        "role": "agent",
+        "text": "Okay, this week it is.  We've got some time Friday afternoon or Saturday morning.  Which one works better?"
+      },
+      {
+        "start": 32.36,
+        "role": "caller",
+        "text": "Friday is okay?"
+      },
+      {
+        "start": 34.61,
+        "role": "agent",
+        "text": "Friday works.  Would you rather come in around two, or closer to five?"
+      },
+      {
+        "start": 40.35,
+        "role": "caller",
+        "text": "Closer to five, please."
+      },
+      {
+        "start": 42.28,
+        "role": "agent",
+        "text": "Okay, Friday at five it is.  What's your name and the best number to reach you?"
+      },
+      {
+        "start": 47.94,
+        "role": "caller",
+        "text": "Uh, my name is Jason Miller, and the phone number is seven one three five five five zero one forty seven."
+      },
+      {
+        "start": 56.82,
+        "role": "agent",
+        "text": "Thanks, Jason.  I've got you down for Friday at five.  You'll get a confirmation text.  Just bring your ID, last year's return, your income and expense records, and any tax forms you have.  See you then!"
+      },
+      {
+        "start": 71.06,
+        "role": "caller",
+        "text": "Perfect. Thanks a lot."
+      },
+      {
+        "start": 73,
+        "role": "agent",
+        "text": "You're welcome, Jason. See you Friday at five. Have a great day!"
+      }
+    ],
+    "callId": "call_f272399ef7274b6aac494ec7503"
   }
 }
