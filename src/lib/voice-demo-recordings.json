@@ -1,1 +1,89 @@
-{}
+{
+  "restaurante-es": {
+    "src": "/voice-demo/restaurante-es.m4a",
+    "duration": 78.2,
+    "transcript": [
+      {
+        "start": 0.6,
+        "role": "agent",
+        "text": "¡Gracias por llamar a La Fogata Cocina Latina! ¿En qué le puedo ayudar hoy?"
+      },
+      {
+        "start": 5.08,
+        "role": "caller",
+        "text": "Hola, buenas tardes. Me quisiera reservar una mesa para este sábado, como a las siete de la noche, son dos, ocho personas."
+      },
+      {
+        "start": 13.04,
+        "role": "agent",
+        "text": "Perfecto, para este sábado a las siete, para ocho personas, ¿verdad?  Tengo"
+      },
+      {
+        "start": 16.96,
+        "role": "caller",
+        "text": "Correcto. Al"
+      },
+      {
+        "start": 16.93,
+        "role": "agent",
+        "text": "mesa a las siete o siete y media.  ¿Le reservo a las siete?"
+      },
+      {
+        "start": 20.59,
+        "role": "caller",
+        "text": "siete y media estaría mejor."
+      },
+      {
+        "start": 23.56,
+        "role": "agent",
+        "text": "Listo, mesa para ocho este sábado a las siete y media.  ¿Me da su nombre y un número de teléfono?"
+      },
+      {
+        "start": 28.87,
+        "role": "caller",
+        "text": "Claro, antes me gustaría saber, ¿ustedes tienen opciones vegetarianas?"
+      },
+      {
+        "start": 32.64,
+        "role": "caller",
+        "text": "Hay amigos que no comen carne."
+      },
+      {
+        "start": 36.08,
+        "role": "agent",
+        "text": "Sí, claro. Tenemos opciones vegetarianas, como arepas de vegetales, pupusas de frijol negro y un plato de vegetales a la parrilla.   ¿Le tomo la reserva?"
+      },
+      {
+        "start": 45.51,
+        "role": "caller",
+        "text": "Sí, por favor."
+      },
+      {
+        "start": 47.74,
+        "role": "agent",
+        "text": "Listo, solo me falta su nombre y un teléfono para confirmar."
+      },
+      {
+        "start": 50.94,
+        "role": "caller",
+        "text": "Dale, mi nombre es José Vargas, Mi número de teléfono es el siete cuarenta y tres, quinientos cincuenta y cinco, cero uno cuarenta y"
+      },
+      {
+        "start": 62.31,
+        "role": "agent",
+        "text": "Listo, José.  Ya quedó su mesa para ocho este sábado veinticuatro de octubre a las siete y media.  Le va a llegar un mensaje de confirmación.  ¡Nos vemos el sábado!"
+      },
+      {
+        "start": 71.3,
+        "role": "caller",
+        "text": "Gracias, muy amable."
+      },
+      {
+        "start": 73.79,
+        "role": "agent",
+        "text": "Con gusto, José. Que tenga linda tarde. Nos vemos el sábado. Hasta luego."
+      }
+    ],
+    "callId": "call_70a1aae6f252564a0f8fc4a06f9"
+  }
+}

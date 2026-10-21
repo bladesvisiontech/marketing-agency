@@ -114,8 +114,8 @@ async function saveAudio(url, key) {
 
   const out = join(AUDIO_DIR, `${key}.m4a`);
   try {
-    // AAC a 96 kbps: suena bien en celular y pesa ~0.7 MB por minuto
-    execFileSync("afconvert", ["-f", "m4af", "-d", "aac", "-b", "96000", tmp, out]);
+    // Retell graba en mono a 24 kHz: AAC a 48 kbps conserva la voz y pesa ~0.36 MB por minuto
+    execFileSync("afconvert", ["-f", "m4af", "-d", "aac", "-b", "48000", tmp, out], { stdio: "pipe" });
     rmSync(tmp);
     return `/voice-demo/${key}.m4a`;
   } catch {
