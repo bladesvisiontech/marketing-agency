@@ -605,5 +605,97 @@
       }
     ],
     "callId": "call_f272399ef7274b6aac494ec7503"
+  },
+  "abogado-es": {
+    "src": "/voice-demo/abogado-es.m4a",
+    "duration": 49.3,
+    "transcript": [
+      {
+        "start": 0.52,
+        "role": "agent",
+        "text": "Morales Law Group, buenas. ¿En qué le podemos ayudar?"
+      },
+      {
+        "start": 4.13,
+        "role": "caller",
+        "text": "¿Cómo estás?"
+      },
+      {
+        "start": 4.85,
+        "role": "caller",
+        "text": "Mira, tuve un accidente de carro ayer en la seis diez, me chocaron por detrás."
+      },
+      {
+        "start": 10.74,
+        "role": "agent",
+        "text": "Entiendo.  ¿Tuvo alguna lesión o fue solo daño al carro?"
+      },
+      {
+        "start": 14.43,
+        "role": "caller",
+        "text": "Oh, sí, me duele mucho el cuello y, pues, fui a urgencias anoche. ¿Qué puedo hacer?"
+      },
+      {
+        "start": 19.15,
+        "role": "agent",
+        "text": "Lo siento mucho.  Ya le marco como urgente y un abogado le va a llamar hoy mismo.  ¿Me da su nombre y un número de teléfono?"
+      },
+      {
+        "start": 26.11,
+        "role": "caller",
+        "text": "Claro, mi nombre es Jorge Ramírez, El número de teléfono es siete trece cinco cincuenta y cinco, cero uno cuarenta y ocho."
+      },
+      {
+        "start": 33.24,
+        "role": "agent",
+        "text": "Perfecto, Jorge.  Ya"
+      },
+      {
+        "start": 34.71,
+        "role": "caller",
+        "text": "¿La consulta"
+      },
+      {
+        "start": 34.66,
+        "role": "agent",
+        "text": "marqué su caso"
+      },
+      {
+        "start": 35.27,
+        "role": "caller",
+        "text": "tiene costo?"
+      },
+      {
+        "start": 37.12,
+        "role": "agent",
+        "text": "No, la consulta es completamente gratis.  El"
+      },
+      {
+        "start": 39.65,
+        "role": "caller",
+        "text": "Ah, ok."
+      },
+      {
+        "start": 39.41,
+        "role": "agent",
+        "text": "abogado le va a explicar todo cuando le llame hoy."
+      },
+      {
+        "start": 43.02,
+        "role": "caller",
+        "text": "Vale, espero la llamada, muchas gracias."
+      },
+      {
+        "start": 45.99,
+        "role": "agent",
+        "text": "Gracias a usted, Jorge. Que se recupere pronto.  Buenas"
+      },
+      {
+        "start": 49.28,
+        "role": "agent",
+        "text": "tardes."
+      }
+    ],
+    "callId": "call_0deb8f00a5e056e0dc776de3d56"
   }
 }
