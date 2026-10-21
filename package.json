@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "voices": "node scripts/voice-demo/list-voices.mjs",
+    "agents": "node scripts/voice-demo/create-agents.mjs",
+    "recordings": "node scripts/voice-demo/fetch-recordings.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.98.0",

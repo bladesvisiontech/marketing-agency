@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 .env.local
 .env*.local
+
+# voice demo: IDs de agentes de Retell
+scripts/voice-demo/agents.generated.json

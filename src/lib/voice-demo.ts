@@ -2,6 +2,7 @@
 // Todo lo de aquí es público (se manda al navegador). Los negocios son ficticios.
 
 import type { Locale } from "@/lib/i18n";
+import recordings from "@/lib/voice-demo-recordings.json";
 
 export type DemoLang = Locale;
 type Localized<T = string> = Record<DemoLang, T>;
@@ -63,9 +64,10 @@ export const PLATFORM_MONTHLY_RANGE: { min: number; max: number } | null = null;
 
 /**
  * Grabaciones reales de cada industria e idioma. Una industria sin grabación
- * se muestra como "en preparación". Los archivos van en public/voice-demo/.
+ * se muestra como "en preparación". El JSON y los audios de public/voice-demo/
+ * los genera `npm run recordings`.
  */
-export const RECORDINGS: Partial<Record<`${IndustrySlug}-${DemoLang}`, Recording>> = {};
+export const RECORDINGS = recordings as Partial<Record<`${IndustrySlug}-${DemoLang}`, Recording>>;
 
 export function getRecording(slug: IndustrySlug, lang: DemoLang): Recording | undefined {
   return RECORDINGS[`${slug}-${lang}`];
