@@ -85,5 +85,82 @@
       }
     ],
     "callId": "call_70a1aae6f252564a0f8fc4a06f9"
+  },
+  "restaurante-en": {
+    "src": "/voice-demo/restaurante-en.m4a",
+    "duration": 70.3,
+    "transcript": [
+      {
+        "start": 0.4,
+        "role": "agent",
+        "text": "Thanks for calling Lone Star Latin Kitchen! How can I help you today?"
+      },
+      {
+        "start": 4.87,
+        "role": "caller",
+        "text": "I would like to get an appointment for seven today, please."
+      },
+      {
+        "start": 9.45,
+        "role": "agent",
+        "text": "We're open until ten tonight, but seven is usually pretty busy.  I can try to get you at seven, or if you want a bit more space, I can do seven thirty.  Which one works better?"
+      },
+      {
+        "start": 21.83,
+        "role": "caller",
+        "text": "Sure. Seven thirty is okay for me."
+      },
+      {
+        "start": 25.02,
+        "role": "agent",
+        "text": "Perfect, seven thirty it is.  How many people are you expecting?"
+      },
+      {
+        "start": 30.48,
+        "role": "caller",
+        "text": "Ah, just me and my wife."
+      },
+      {
+        "start": 33.23,
+        "role": "agent",
+        "text": "Okay, table for two at 7:30.  Can I"
+      },
+      {
+        "start": 36.48,
+        "role": "caller",
+        "text": "Yes. Maybe."
+      },
+      {
+        "start": 36.43,
+        "role": "agent",
+        "text": "get your name and a good phone number"
+      },
+      {
+        "start": 39.03,
+        "role": "caller",
+        "text": "What kind of this is do you offer, guys?"
+      },
+      {
+        "start": 41.96,
+        "role": "agent",
+        "text": "We do Latin American food — Colombian, Mexican, and Salvadoran.  Some favorites are bandeja paisa, carne asada, pupusas, tacos al pastor, and arepas.  We also have vegetarian and gluten-free options.  Want me to hold that table for you at 7:30?"
+      },
+      {
+        "start": 61.48,
+        "role": "caller",
+        "text": "Yeah. Yes. It's okay for me. Thank you."
+      },
+      {
+        "start": 65.05,
+        "role": "agent",
+        "text": "Great, you're all set for seven thirty. I'll text you a confirmation. See you then!"
+      },
+      {
+        "start": 69.52,
+        "role": "caller",
+        "text": "Thank you"
+      }
+    ],
+    "callId": "call_56ae59bbf8ed02e359e582f1b9b"
   }
 }

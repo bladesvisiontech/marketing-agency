@@ -8,6 +8,7 @@
 //   npm run recordings -- --only=dental-es              # solo esa
 //   npm run recordings -- --only=dental-es --call=ID    # una llamada concreta (si grabaste varias)
 //   npm run recordings -- --list                        # muestra las llamadas sin bajar nada
+//   npm run recordings -- --new --skip=restaurante-es   # solo llamadas nuevas; deja fijas las aprobadas
 //
 // Requiere RETELL_API_KEY en .env.local y agents.generated.json (npm run agents).
 // Convierte con afconvert (viene con macOS); sin él guarda el archivo original.
@@ -43,7 +44,8 @@ if (args.call && !args.only) fail("--call necesita --only=<industria>-<idioma>")
 
 const agents = JSON.parse(readFileSync(AGENTS_FILE, "utf8"));
 const data = existsSync(DATA_FILE) ? JSON.parse(readFileSync(DATA_FILE, "utf8")) : {};
-const keys = Object.keys(agents).filter((k) => !args.only || k === args.only);
+const skip = new Set(String(args.skip ?? "").split(",").filter(Boolean));
+const keys = Object.keys(agents).filter((k) => (!args.only || k === args.only) && !skip.has(k));
 if (keys.length === 0) fail(`No hay agente "${args.only}" en agents.generated.json`);
 
 for (const key of keys) {
@@ -61,9 +63,11 @@ for (const key of keys) {
     ? { call_id: String(args.call) }
     : calls.find((c) => (c.duration_ms ?? 0) >= MIN_SECONDS * 1000);
   if (!summary) {
-    console.log(`·  ${key}: sin grabación todavía`);
+    if (!args.new) console.log(`·  ${key}: sin grabación todavía`);
     continue;
   }
+  // --new: la última llamada ya está en el demo, no hay nada que bajar
+  if (args.new && data[key]?.callId === summary.call_id) continue;
 
   const call = await api("GET", `/v2/get-call/${summary.call_id}`);
   if (call.agent_id !== agents[key].agent_id) fail(`${key}: la llamada ${call.call_id} es de otro agente`);
