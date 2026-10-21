@@ -52,7 +52,7 @@ for (const { slug, lang, key } of keys) {
   const llmBody = {
     model_config: MODEL_CONFIG,
     general_prompt: buildPrompt(slug),
-    begin_message: GREETINGS[slug][lang].replaceAll("{agent}", persona).replaceAll("{business}", business),
+    begin_message: GREETINGS[slug][lang].replaceAll("{business}", business),
     default_dynamic_variables: {
       agent_name: persona,
       business_name: business,
@@ -64,7 +64,7 @@ for (const { slug, lang, key } of keys) {
   const voice = VOICES[lang];
   const agentBody = {
     voice_id: voice.voice_id,
-    voice_model: voice.voice_id.startsWith("11labs-") ? voice.voice_model : null,
+    voice_model: voice.voice_model ?? null,
     language: RETELL_LANGUAGE[lang],
     stt_mode: STT_MODE,
   };

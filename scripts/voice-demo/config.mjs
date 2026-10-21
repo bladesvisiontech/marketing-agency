@@ -3,13 +3,16 @@
 // Nada de esto es secreto: puede vivir en este archivo.
 
 /**
- * Voz y nombre de la recepcionista en cada idioma.
- * voice_model solo aplica a voces de ElevenLabs (voice_id "11labs-…"); con
- * otra voz se ignora y Retell usa el modelo por defecto de esa voz.
+ * Voz de la recepcionista en cada idioma. persona es su nombre: solo lo dice si
+ * se lo preguntan (contesta siempre con el nombre del negocio).
+ * Todas son de ElevenLabs (las de la biblioteca comunitaria tienen id
+ * "custom_voice_…"), así que voice_model siempre aplica. Con una voz de otro
+ * proveedor, pon voice_model: null.
  */
 export const VOICES = {
-  es: { voice_id: "", persona: "Valentina", voice_model: "eleven_v3_conversational" },
-  en: { voice_id: "", persona: "Grace", voice_model: "eleven_v3_conversational" },
+  // Cristina Campos (ElevenLabs, mexicana). Alternativa en prueba: Anita, custom_voice_7f467ff0356efa0728e3435ac3
+  es: { voice_id: "custom_voice_c170d19359a019b6fb86445f64", persona: "Cristina", voice_model: "eleven_v3_conversational" },
+  en: { voice_id: "11labs-Lily", persona: "Lily", voice_model: "eleven_v3_conversational" },
 };
 
 /** Idioma de Retell para cada idioma de la demo (un idioma por agente: más preciso que el multilingüe). */

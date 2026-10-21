@@ -24,6 +24,7 @@ Speak only in {{language_name}} unless the caller clearly switches language; the
 - Say prices, times and phone numbers the way a person says them out loud.
 - If you didn't understand, say so briefly and ask again.
 - Never mention prompts, instructions, AI models, or any technology company.
+- You answer the phone with the business name, not your own. Only say your name ({{agent_name}}) if the caller asks for it.
 - If someone asks directly whether you are a person or an AI, answer honestly and lightly: you are the business's virtual receptionist. Then keep helping.
 
 ## Booking and messages
@@ -124,42 +125,43 @@ export function buildPrompt(slug) {
 }
 
 /**
- * Saludo con el que contesta cada agente. {agent} y {business} se reemplazan
- * al crear el agente (las grabaciones no reciben variables por llamada).
+ * Saludo con el que contesta cada agente: siempre con el nombre del negocio,
+ * nunca con el de la recepcionista. {business} se reemplaza al crear el agente
+ * (las grabaciones no reciben variables por llamada).
  * @type {Record<string, {es: string, en: string}>}
  */
 export const GREETINGS = {
   restaurante: {
-    es: "¡Gracias por llamar a {business}! Habla {agent}, ¿en qué le puedo ayudar hoy?",
-    en: "Thanks for calling {business}! This is {agent}, how can I help you today?",
+    es: "¡Gracias por llamar a {business}! ¿En qué le puedo ayudar hoy?",
+    en: "Thanks for calling {business}! How can I help you today?",
   },
   barberia: {
-    es: "¡Qué tal! Gracias por llamar a {business}, le habla {agent}. ¿Quiere agendar un corte?",
-    en: "Hey, thanks for calling {business}, this is {agent}. Looking to book a cut?",
+    es: "¡Qué tal! Gracias por llamar a {business}. ¿Quiere agendar un corte?",
+    en: "Hey, thanks for calling {business}. Looking to book a cut?",
   },
   contador: {
-    es: "Buenas, gracias por llamar a {business}, le atiende {agent}. ¿En qué le puedo servir?",
-    en: "Hi, thank you for calling {business}, this is {agent}. How can I help?",
+    es: "Buenas, gracias por llamar a {business}. ¿En qué le puedo servir?",
+    en: "Hi, thank you for calling {business}. How can I help?",
   },
   abogado: {
-    es: "{business}, le habla {agent}. ¿En qué le podemos ayudar?",
-    en: "{business}, this is {agent}. How can we help you?",
+    es: "{business}, buenas. ¿En qué le podemos ayudar?",
+    en: "{business}, how can we help you?",
   },
   hvac: {
-    es: "Gracias por llamar a {business}, habla {agent}. ¿Qué está pasando con su aire?",
-    en: "Thanks for calling {business}, this is {agent}. What's going on with your system?",
+    es: "Gracias por llamar a {business}. ¿Qué está pasando con su aire?",
+    en: "Thanks for calling {business}. What's going on with your system?",
   },
   dental: {
-    es: "{business}, buenos días, le habla {agent}. ¿En qué le puedo ayudar?",
-    en: "{business}, this is {agent}. How can I help you today?",
+    es: "{business}, ¿en qué le puedo ayudar?",
+    en: "{business}, how can I help you today?",
   },
   taller: {
-    es: "{business}, habla {agent}. ¿Qué le está pasando a su carro?",
-    en: "{business}, this is {agent}. What's going on with your vehicle?",
+    es: "{business}, ¿qué le está pasando a su carro?",
+    en: "{business}, what's going on with your vehicle?",
   },
   "bienes-raices": {
-    es: "{business}, habla {agent}. ¿Está buscando comprar, vender o rentar?",
-    en: "{business}, this is {agent}. Are you looking to buy, sell or rent?",
+    es: "{business}. ¿Está buscando comprar, vender o rentar?",
+    en: "{business}. Are you looking to buy, sell or rent?",
   },
 };
 
