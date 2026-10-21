@@ -794,5 +794,97 @@
       }
     ],
     "callId": "call_448a4b254d08f3e4c615f4aedca"
+  },
+  "hvac-es": {
+    "src": "/voice-demo/hvac-es.m4a",
+    "duration": 94.8,
+    "transcript": [
+      {
+        "start": 0.6,
+        "role": "agent",
+        "text": "Gracias por llamar a Polar Air Heating & Cooling. ¿Qué está pasando con su aire?"
+      },
+      {
+        "start": 5.17,
+        "role": "caller",
+        "text": "Hola. Mi aire aire caliente desde"
+      },
+      {
+        "start": 11.76,
+        "role": "agent",
+        "text": "Entiendo, su aire está sacando calor.  ¿Desde cuándo nota el problema?"
+      },
+      {
+        "start": 16.9,
+        "role": "caller",
+        "text": "Bueno, es, en realidad, me percaté de ello desde esta mañana."
+      },
+      {
+        "start": 21.94,
+        "role": "agent",
+        "text": "Entiendo.  ¿El aire sigue funcionando, o dejó de enfriar por completo?"
+      },
+      {
+        "start": 27,
+        "role": "caller",
+        "text": "Pues, en realidad, dejó de funcionar y mi mamá está aquí, la casa, y ya está mayor, y hace mucho calor. Pueden ayudar?"
+      },
+      {
+        "start": 33.95,
+        "role": "agent",
+        "text": "Claro, lo entiendo. Como hay una persona mayor y hace mucho calor, lo consideramos una emergencia.  Voy a marcarlo urgente y un técnico le llama en menos de treinta minutos.  ¿Me da su nombre y un número de teléfono?"
+      },
+      {
+        "start": 47.13,
+        "role": "caller",
+        "text": "Claro, mi nombre es José Hernández, Mi número de teléfono es siete trece cinco cincuenta y cinco, cero uno cincuenta."
+      },
+      {
+        "start": 54.98,
+        "role": "agent",
+        "text": "Perfecto, señor José.  ¿Me da la dirección y el código postal?"
+      },
+      {
+        "start": 59.11,
+        "role": "caller",
+        "text": "Claro, la dirección es, pues, cuatro cuarenta y cuatro, Oakholow Doctor siete setenta ochenta y cuatro."
+      },
+      {
+        "start": 68.17,
+        "role": "agent",
+        "text": "Listo.  Un técnico le va a marcar en menos de treinta minutos para coordinar la visita urgente.  Y"
+      },
+      {
+        "start": 73.47,
+        "role": "caller",
+        "text": "Gracias. ¿Cuánto cobran"
+      },
+      {
+        "start": 73.46,
+        "role": "agent",
+        "text": "recuerde, si nota algún olor a"
+      },
+      {
+        "start": 74.59,
+        "role": "caller",
+        "text": "por venir?"
+      },
+      {
+        "start": 78,
+        "role": "agent",
+        "text": "El diagnóstico cuesta ochenta y nueve dólares, pero si aprueban la reparación, se le descuenta.  Y no se cobra si solo es para cotizar un sistema nuevo."
+      },
+      {
+        "start": 87.04,
+        "role": "caller",
+        "text": "Okay, perfecto, gracias. Aquí los espero."
+      },
+      {
+        "start": 90.79,
+        "role": "agent",
+        "text": "Gracias a usted, señor José. Un técnico le llama pronto. Que tenga buena tarde."
+      }
+    ],
+    "callId": "call_709d06c21b6f2b4d33952e469d6"
   }
 }
