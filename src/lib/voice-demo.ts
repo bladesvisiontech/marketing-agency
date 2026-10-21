@@ -47,8 +47,8 @@ export type Industry = {
   icon: IndustryIcon;
   name: Localized;
   tagline: Localized;
-  /** Negocio ficticio que representa la recepcionista en la grabación */
-  businessName: string;
+  /** Negocio ficticio que representa la recepcionista en la grabación de cada idioma */
+  businessName: Localized;
   handles: Localized<string[]>;
   /** Guion corto para el vendedor (solo con ?ref=) */
   sellerPitch: Localized<string[]>;
@@ -82,7 +82,7 @@ export const INDUSTRIES: Industry[] = [
       es: "Toma reservas, contesta el menú y pedidos de catering.",
       en: "Takes reservations, answers menu and catering questions.",
     },
-    businessName: "La Fogata Cocina Latina",
+    businessName: { es: "La Fogata Cocina Latina", en: "Lone Star Latin Kitchen" },
     handles: {
       es: [
         "Reservas de mesa y grupos grandes",
@@ -119,7 +119,7 @@ export const INDUSTRIES: Industry[] = [
       es: "Agenda cortes con el barbero que el cliente quiere.",
       en: "Books cuts with the barber each client wants.",
     },
-    businessName: "Corte Fino Barber Studio",
+    businessName: { es: "Corte Fino Barber Studio", en: "Sharp Line Barber Studio" },
     handles: {
       es: [
         "Citas con barbero específico",
@@ -156,7 +156,7 @@ export const INDUSTRIES: Industry[] = [
       es: "Agenda citas de taxes, ITIN y explica qué documentos traer.",
       en: "Books tax and ITIN appointments and explains what to bring.",
     },
-    businessName: "Rivera Tax & Accounting",
+    businessName: { es: "Rivera Tax & Accounting", en: "Bayou City Tax & Accounting" },
     handles: {
       es: [
         "Citas para declaración de impuestos",
@@ -193,7 +193,7 @@ export const INDUSTRIES: Industry[] = [
       es: "Recibe casos nuevos 24/7 y agenda la consulta.",
       en: "Takes new-case intake 24/7 and books the consult.",
     },
-    businessName: "Morales Law Group",
+    businessName: { es: "Morales Law Group", en: "Carter & Hayes Law Group" },
     handles: {
       es: [
         "Intake de casos nuevos (accidentes, inmigración, familia)",
@@ -230,7 +230,7 @@ export const INDUSTRIES: Industry[] = [
       es: "Agenda visitas técnicas y detecta emergencias.",
       en: "Books service calls and catches emergencies.",
     },
-    businessName: "Polar Air Heating & Cooling",
+    businessName: { es: "Polar Air Heating & Cooling", en: "Polar Air Heating & Cooling" },
     handles: {
       es: [
         "Visitas de servicio y mantenimiento",
@@ -267,7 +267,7 @@ export const INDUSTRIES: Industry[] = [
       es: "Agenda limpiezas, urgencias y preguntas de seguro.",
       en: "Books cleanings, urgent visits and insurance questions.",
     },
-    businessName: "Sonrisa Dental Care",
+    businessName: { es: "Sonrisa Dental Care", en: "Bright Smile Dental Care" },
     handles: {
       es: [
         "Citas de limpieza, revisión y blanqueamiento",
@@ -304,7 +304,7 @@ export const INDUSTRIES: Industry[] = [
       es: "Agenda revisiones y da estimados de servicios comunes.",
       en: "Books inspections and quotes common services.",
     },
-    businessName: "Torque Auto Repair",
+    businessName: { es: "Torque Auto Repair", en: "Torque Auto Repair" },
     handles: {
       es: [
         "Citas de diagnóstico y mantenimiento",
@@ -341,7 +341,7 @@ export const INDUSTRIES: Industry[] = [
       es: "Califica compradores y vendedores y agenda visitas.",
       en: "Qualifies buyers and sellers and books showings.",
     },
-    businessName: "Casa Propia Realty",
+    businessName: { es: "Casa Propia Realty", en: "Front Porch Realty" },
     handles: {
       es: [
         "Califica presupuesto, zona y tiempos",

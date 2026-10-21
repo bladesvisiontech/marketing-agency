@@ -217,7 +217,7 @@ export default function VoiceDemo({ t, locale, initialIndustry, showSellerNotes 
                     <Icon size={18} className="text-[#b98cff]" aria-hidden />
                   </div>
                   <div>
-                    <p className="text-white font-semibold leading-snug">{industry.businessName}</p>
+                    <p className="text-white font-semibold leading-snug">{industry.businessName[callLang]}</p>
                     <p className="text-white/30 text-xs mt-0.5">{t.fictional}</p>
                   </div>
                 </div>

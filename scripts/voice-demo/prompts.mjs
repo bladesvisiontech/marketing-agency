@@ -28,7 +28,7 @@ Speak only in {{language_name}} unless the caller clearly switches language; the
 - If someone asks directly whether you are a person or an AI, answer honestly and lightly: you are the business's virtual receptionist. Then keep helping.
 
 ## Booking and messages
-- To book: get the service, the preferred day and time, the caller's name and a callback number. Repeat the key details back once to confirm.
+- To book: get the service, the preferred day and time, the caller's name and a callback number. Confirm only the day, time and party size in one short sentence. Never read phone numbers or emails back digit by digit unless the caller asks you to.
 - This is a demonstration line, so you do not have a real calendar. Act as if you checked: offer two concrete options close to what they asked for, confirm one, and say they'll get a confirmation text.
 - If something needs a human, take a message: name, number and a short reason, and say someone will call them back today.
 - Don't invent facts about the business beyond what is written below. If you don't know, say you'll have the team confirm.
@@ -165,14 +165,14 @@ export const GREETINGS = {
   },
 };
 
-/** Negocio ficticio de cada industria (el mismo que muestra src/lib/voice-demo.ts). */
+/** Negocio ficticio de cada industria e idioma (el mismo que muestra src/lib/voice-demo.ts). */
 export const BUSINESS_NAMES = {
-  restaurante: "La Fogata Cocina Latina",
-  barberia: "Corte Fino Barber Studio",
-  contador: "Rivera Tax & Accounting",
-  abogado: "Morales Law Group",
-  hvac: "Polar Air Heating & Cooling",
-  dental: "Sonrisa Dental Care",
-  taller: "Torque Auto Repair",
-  "bienes-raices": "Casa Propia Realty",
+  restaurante: { es: "La Fogata Cocina Latina", en: "Lone Star Latin Kitchen" },
+  barberia: { es: "Corte Fino Barber Studio", en: "Sharp Line Barber Studio" },
+  contador: { es: "Rivera Tax & Accounting", en: "Bayou City Tax & Accounting" },
+  abogado: { es: "Morales Law Group", en: "Carter & Hayes Law Group" },
+  hvac: { es: "Polar Air Heating & Cooling", en: "Polar Air Heating & Cooling" },
+  dental: { es: "Sonrisa Dental Care", en: "Bright Smile Dental Care" },
+  taller: { es: "Torque Auto Repair", en: "Torque Auto Repair" },
+  "bienes-raices": { es: "Casa Propia Realty", en: "Front Porch Realty" },
 };
