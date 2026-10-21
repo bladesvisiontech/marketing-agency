@@ -88,7 +88,7 @@
   },
   "restaurante-en": {
     "src": "/voice-demo/restaurante-en.m4a",
-    "duration": 70.3,
+    "duration": 118.4,
     "transcript": [
       {
         "start": 0.4,
@@ -96,72 +96,122 @@
         "text": "Thanks for calling Lone Star Latin Kitchen! How can I help you today?"
       },
       {
-        "start": 4.87,
+        "start": 4.98,
         "role": "caller",
-        "text": "I would like to get an appointment for seven today, please."
+        "text": "Hey. I wanna get an appointment for today, please."
       },
       {
-        "start": 9.45,
+        "start": 9.39,
         "role": "agent",
-        "text": "We're open until ten tonight, but seven is usually pretty busy.  I can try to get you at seven, or if you want a bit more space, I can do seven thirty.  Which one works better?"
+        "text": "We've got plenty of space tonight.  What time were you thinking? More like six,"
       },
       {
-        "start": 21.83,
+        "start": 13.59,
         "role": "caller",
-        "text": "Sure. Seven thirty is okay for me."
+        "text": "Around"
       },
       {
-        "start": 25.02,
+        "start": 13.55,
         "role": "agent",
-        "text": "Perfect, seven thirty it is.  How many people are you expecting?"
+        "text": "or closer"
       },
       {
-        "start": 30.48,
+        "start": 14.63,
         "role": "caller",
-        "text": "Ah, just me and my wife."
+        "text": "seven should be good."
       },
       {
-        "start": 33.23,
+        "start": 17.1,
         "role": "agent",
-        "text": "Okay, table for two at 7:30.  Can I"
+        "text": "Seven works.  How many people are you expecting?"
       },
       {
-        "start": 36.48,
+        "start": 21.93,
         "role": "caller",
-        "text": "Yes. Maybe."
+        "text": "No. Just me and my wife."
       },
       {
-        "start": 36.43,
+        "start": 24.18,
         "role": "agent",
-        "text": "get your name and a good phone number"
+        "text": "Perfect, a table for two at 7.  Can I get your name and phone number?"
       },
       {
-        "start": 39.03,
+        "start": 29.76,
         "role": "caller",
-        "text": "What kind of this is do you offer, guys?"
+        "text": "Yes. But first, do you have vegetarian option?"
       },
       {
-        "start": 41.96,
+        "start": 33.84,
         "role": "agent",
-        "text": "We do Latin American food — Colombian, Mexican, and Salvadoran.  Some favorites are bandeja paisa, carne asada, pupusas, tacos al pastor, and arepas.  We also have vegetarian and gluten-free options.  Want me to hold that table for you at 7:30?"
+        "text": "Yeah, we have veggie arepas, black-bean pupusas, and a grilled vegetable plate.  Want me to go ahead and book your table?"
       },
       {
-        "start": 61.48,
+        "start": 43.26,
         "role": "caller",
-        "text": "Yeah. Yes. It's okay for me. Thank you."
+        "text": "Yes. Yes. Uh, please, uh, book the appointment, please."
       },
       {
-        "start": 65.05,
+        "start": 48.15,
         "role": "agent",
-        "text": "Great, you're all set for seven thirty. I'll text you a confirmation. See you then!"
+        "text": "Alright.  To lock it in for you and your wife at 7 tonight,"
       },
       {
-        "start": 69.52,
+        "start": 53.49,
         "role": "caller",
-        "text": "Thank you"
+        "text": "Yes. Sounds great."
+      },
+      {
+        "start": 55.52,
+        "role": "agent",
+        "text": "Awesome.  To finish up, what's your name and phone number?"
+      },
+      {
+        "start": 60.19,
+        "role": "caller",
+        "text": "My name is Josh Smith. And my phone number is seven one three five five five zero one four three."
+      },
+      {
+        "start": 69.9,
+        "role": "agent",
+        "text": "Thanks, Josh.  You and your wife are all set for 7 tonight.  You'll get a confirmation text soon.  See you later!"
+      },
+      {
+        "start": 76.43,
+        "role": "caller",
+        "text": "Yeah. I I wanna sorry. I I wanna get some special because it's her birthday."
+      },
+      {
+        "start": 83.55,
+        "role": "agent",
+        "text": "Aw, that's sweet.  I'll let the team know it's her birthday so they can make it special.  Anything in particular you want, like a candle on dessert, or just a little extra attention?"
+      },
+      {
+        "start": 96.01,
+        "role": "caller",
+        "text": "Yes. I I would like to have a candle on on on on dessert, please."
+      },
+      {
+        "start": 103.13,
+        "role": "agent",
+        "text": "You got it, Josh.  We'll make sure to put a candle on the dessert.  Anything else you'd like to add?"
+      },
+      {
+        "start": 109.53,
+        "role": "caller",
+        "text": "No. That that should be good."
+      },
+      {
+        "start": 112.08,
+        "role": "agent",
+        "text": "All set, Josh. We'll see you both at seven, and happy birthday to your wife! Have a great evening."
+      },
+      {
+        "start": 117.4,
+        "role": "caller",
+        "text": "Oh, thank you."
       }
     ],
-    "callId": "call_56ae59bbf8ed02e359e582f1b9b"
+    "callId": "call_8d20afe9e4675e833284d7f2fd2"
   },
   "barberia-es": {
     "src": "/voice-demo/barberia-es.m4a",
