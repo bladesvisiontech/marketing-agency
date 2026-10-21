@@ -1147,5 +1147,102 @@
       }
     ],
     "callId": "call_40968c5ddbae75ed4347294957a"
+  },
+  "taller-es": {
+    "src": "/voice-demo/taller-es.m4a",
+    "duration": 88.9,
+    "transcript": [
+      {
+        "start": 0.64,
+        "role": "agent",
+        "text": "Torque Auto Repair, ¿qué le está pasando a su carro?"
+      },
+      {
+        "start": 3.92,
+        "role": "caller",
+        "text": "Hola, buenas tardes. Lo que sucede es que iba manejando, iba conduciendo, y la luz del se me prendió"
+      },
+      {
+        "start": 12.84,
+        "role": "agent",
+        "text": "Claro.  ¿La luz del check engine, verdad?  ¿El carro sigue"
+      },
+      {
+        "start": 16.11,
+        "role": "caller",
+        "text": "Correcto."
+      },
+      {
+        "start": 15.83,
+        "role": "agent",
+        "text": "funcionando bien o notó algún ruido o pérdida de potencia?"
+      },
+      {
+        "start": 20.62,
+        "role": "caller",
+        "text": "En realidad, sí, perdió potencia. Es un Honda Civic del dos mil dieciocho."
+      },
+      {
+        "start": 25.41,
+        "role": "agent",
+        "text": "Entiendo, eso sí lo mejor es revisarlo pronto.  El diagnóstico del check engine cuesta noventa y cinco dólares, y si hace la reparación aquí, se descuenta.  ¿Prefiere traerlo mañana temprano o el viernes?"
+      },
+      {
+        "start": 37.07,
+        "role": "caller",
+        "text": "Sí, mañana temprano. Necesito el carro para ir a a chambear."
+      },
+      {
+        "start": 41.9,
+        "role": "agent",
+        "text": "Perfecto, puede traerlo mañana desde las siete y media.  Si llega antes de las diez, lo tenemos el mismo día.  ¿Me da su nombre y un número para avisarle cuando esté listo?"
+      },
+      {
+        "start": 51.02,
+        "role": "caller",
+        "text": "Claro, mi nombre es Luis Castillo y el número de teléfono siete trece cinco cincuenta y cinco uno cincuenta y cuatro."
+      },
+      {
+        "start": 57.96,
+        "role": "agent",
+        "text": "Gracias, Luis.  ¿Es su Honda Civic de motor regular o turbo?  Y solo para confirmar,"
+      },
+      {
+        "start": 63.05,
+        "role": "caller",
+        "text": "Es turbo."
+      },
+      {
+        "start": 62.88,
+        "role": "agent",
+        "text": "¿mañana lo trae por la mañana para revisar la luz del check engine y la pérdida de potencia, verdad?"
+      },
+      {
+        "start": 68.45,
+        "role": "caller",
+        "text": "Sí, correcto."
+      },
+      {
+        "start": 69.17,
+        "role": "caller",
+        "text": "mañana en la mañana."
+      },
+      {
+        "start": 71.16,
+        "role": "agent",
+        "text": "Listo, Luis.  Lo esperamos mañana temprano para revisar su Civic turbo.  Le mandamos un mensaje cuando esté listo.  ¿Quiere que le mande la dirección por texto?"
+      },
+      {
+        "start": 80.64,
+        "role": "caller",
+        "text": "No, o sea, sí está bien, yo tengo la dirección. Muchas gracias."
+      },
+      {
+        "start": 84.17,
+        "role": "agent",
+        "text": "Listo, Luis. Lo esperamos mañana. Que tenga buena tarde y buen trabajo. Hasta luego."
+      }
+    ],
+    "callId": "call_ad4ad21afd7f9cce3fbcaa4e62b"
   }
 }
