@@ -416,5 +416,122 @@
       }
     ],
     "callId": "call_f12fd8e7ed841350db1c83914ad"
+  },
+  "contador-es": {
+    "src": "/voice-demo/contador-es.m4a",
+    "duration": 124.6,
+    "transcript": [
+      {
+        "start": 0.64,
+        "role": "agent",
+        "text": "Buenas, gracias por llamar a Rivera Tax & Accounting. ¿En qué le puedo servir?"
+      },
+      {
+        "start": 4.84,
+        "role": "caller",
+        "text": "Hola, ¿con quién tengo el gusto de hablar?"
+      },
+      {
+        "start": 8.09,
+        "role": "agent",
+        "text": "Soy la recepcionista virtual de Rivera Tax and Accounting.  ¿En qué le puedo ayudar?"
+      },
+      {
+        "start": 12.99,
+        "role": "caller",
+        "text": "Mira, lo que sucede es que quiero hacer mis taxes este año. ¿Ustedes me pueden ayudar?"
+      },
+      {
+        "start": 18.28,
+        "role": "agent",
+        "text": "Claro que sí, nos encargamos de eso.  ¿Quiere agendar una cita esta semana o prefiere la próxima?"
+      },
+      {
+        "start": 24.5,
+        "role": "caller",
+        "text": "Sí, esta semana estaría bien. Pues yo me dedico a trabajar por mi cuenta, yo limpio casas."
+      },
+      {
+        "start": 31.91,
+        "role": "agent",
+        "text": "Perfecto, entonces sería para persona independiente.  ¿Prefiere venir"
+      },
+      {
+        "start": 35.55,
+        "role": "caller",
+        "text": "Correcto."
+      },
+      {
+        "start": 35.53,
+        "role": "agent",
+        "text": "este viernes en la tarde o el sábado por la mañana?"
+      },
+      {
+        "start": 39.25,
+        "role": "caller",
+        "text": "El viernes en la tarde, y, pues, dime qué papeles tengo que llevar."
+      },
+      {
+        "start": 44.5,
+        "role": "agent",
+        "text": "Claro. Necesita traer su identificación, la carta de ITIN si tiene, los formularios de ingresos y gastos, el último reporte de impuestos y los datos bancarios para el depósito.  Y si tiene dependientes, también los números de seguro o ITIN.  ¿Le queda bien a las cinco o a las seis el viernes?"
+      },
+      {
+        "start": 61.05,
+        "role": "caller",
+        "text": "A las cinco está bien, pero hay una cosa, mi esposa no tiene seguridad."
+      },
+      {
+        "start": 67.1,
+        "role": "agent",
+        "text": "No se preocupe.  Si su esposa no tiene seguro social, le podemos ayudar con la solicitud o renovación de ITIN.   ¿Quiere que agendemos la cita para ambos este viernes a las cinco?"
+      },
+      {
+        "start": 78.26,
+        "role": "caller",
+        "text": "Sí, por favor. Y también dime, pues, cuánto cuesta, qué cobran ustedes por la declaración de alguien que trabajaba por su cuenta como yo."
+      },
+      {
+        "start": 86.57,
+        "role": "agent",
+        "text": "Para personas independientes, el precio empieza desde trescientos dólares.  Ya en la cita el contador revisa todo y le confirma el costo final.   Entonces, lo agendo para este viernes a las cinco para usted y su esposa.  ¿Me"
+      },
+      {
+        "start": 99.06,
+        "role": "caller",
+        "text": "Sí, por favor."
+      },
+      {
+        "start": 98.98,
+        "role": "agent",
+        "text": "regala su nombre completo y un número de teléfono para confirmar?"
+      },
+      {
+        "start": 102.52,
+        "role": "caller",
+        "text": "Sí, claro, mi nombre es es Mario Gómez, y mi número de teléfono es siete trece cinco cinco cinco cero uno cuarenta"
+      },
+      {
+        "start": 111.58,
+        "role": "agent",
+        "text": "Perfecto, Mario.   Ya quedó agendada para este viernes a las cinco,"
+      },
+      {
+        "start": 115.17,
+        "role": "caller",
+        "text": "y"
+      },
+      {
+        "start": 115.12,
+        "role": "agent",
+        "text": "para usted y su esposa.   Le va a llegar un mensaje de confirmación a ese número.   Nos vemos el viernes. Que tenga buena tarde."
+      },
+      {
+        "start": 120.57,
+        "role": "caller",
+        "text": "Dale, muchas gracias."
+      }
+    ],
+    "callId": "call_ccbbf1332e7a3d4df7304ee761c"
   }
 }

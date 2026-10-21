@@ -9,11 +9,12 @@
 //   npm run recordings -- --only=dental-es --call=ID    # una llamada concreta (si grabaste varias)
 //   npm run recordings -- --list                        # muestra las llamadas sin bajar nada
 //   npm run recordings -- --new --skip=restaurante-es   # solo llamadas nuevas; deja fijas las aprobadas
+//   npm run recordings -- --only=contador-es --cut=124.6   # recorta el audio en ese segundo (necesita ffmpeg)
 //
 // Requiere RETELL_API_KEY en .env.local y agents.generated.json (npm run agents).
 // Convierte con afconvert (viene con macOS); sin él guarda el archivo original.
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync, renameSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
@@ -40,7 +41,9 @@ const args = Object.fromEntries(
 const apiKey = process.env.RETELL_API_KEY;
 if (!apiKey) fail("Falta RETELL_API_KEY en .env.local");
 if (!existsSync(AGENTS_FILE)) fail("No existe agents.generated.json: corre primero npm run agents");
-if (args.call && !args.only) fail("--call necesita --only=<industria>-<idioma>");
+if ((args.call || args.cut) && !args.only) fail("--call y --cut necesitan --only=<industria>-<idioma>");
+const cut = args.cut ? Number(args.cut) : null;
+if (cut !== null && !(cut > 0)) fail("--cut debe ser un número de segundos");
 
 const agents = JSON.parse(readFileSync(AGENTS_FILE, "utf8"));
 const data = existsSync(DATA_FILE) ? JSON.parse(readFileSync(DATA_FILE, "utf8")) : {};
@@ -75,6 +78,7 @@ for (const key of keys) {
 
   const transcript = (call.transcript_object ?? [])
     .filter((u) => (u.role === "agent" || u.role === "user") && u.content?.trim())
+    .filter((u) => cut === null || (u.words?.[0]?.start ?? 0) < cut)
     .map((u) => ({
       start: Math.round((u.words?.[0]?.start ?? 0) * 100) / 100,
       role: u.role === "agent" ? "agent" : "caller",
@@ -84,10 +88,11 @@ for (const key of keys) {
 
   mkdirSync(AUDIO_DIR, { recursive: true });
   const src = await saveAudio(call.recording_url, key);
+  if (cut !== null) trimAudio(join(root, "public", src), cut);
 
   data[key] = {
     src,
-    duration: Math.round((call.duration_ms ?? 0) / 100) / 10,
+    duration: cut ?? Math.round((call.duration_ms ?? 0) / 100) / 10,
     transcript,
     callId: call.call_id,
   };
@@ -129,6 +134,17 @@ async function saveAudio(url, key) {
     console.warn(`⚠️  ${key}: sin afconvert, se guardó el ${ext} original`);
     return `/voice-demo/${key}.${ext}`;
   }
+}
+
+/** Corta el audio en `seconds` (sin recodificar) para quitar un final a medias. */
+function trimAudio(file, seconds) {
+  const tmp = file.replace(/(\.\w+)$/, ".cut$1");
+  try {
+    execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-i", file, "-t", String(seconds), "-c", "copy", tmp]);
+  } catch {
+    fail("--cut necesita ffmpeg (brew install ffmpeg)");
+  }
+  renameSync(tmp, file);
 }
 
 async function api(method, path, body) {
