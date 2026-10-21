@@ -1361,5 +1361,87 @@
       }
     ],
     "callId": "call_8e48b9b092efcfa6d07a1b18e0f"
+  },
+  "bienes-raices-es": {
+    "src": "/voice-demo/bienes-raices-es.m4a",
+    "duration": 115.9,
+    "transcript": [
+      {
+        "start": 0.49,
+        "role": "agent",
+        "text": "Casa Propia Realty. ¿Está buscando comprar, vender o rentar?"
+      },
+      {
+        "start": 4.77,
+        "role": "caller",
+        "text": "Hola, buenas tardes. Pues, en realidad, con mi esposa tenemos el primera casa, pero nos gustaría por el área de Katy."
+      },
+      {
+        "start": 14.15,
+        "role": "agent",
+        "text": "Perfecto, entonces están buscando comprar en Katy.  ¿Ya están preaprobados para un préstamo, o prefieren que les conecte con un asesor de crédito?"
+      },
+      {
+        "start": 23.39,
+        "role": "caller",
+        "text": "Ah, pues, revisar las opciones que tú nos digas."
+      },
+      {
+        "start": 28.24,
+        "role": "agent",
+        "text": "Claro.  ¿Me podría decir más o menos su presupuesto y cuántas recámaras buscan?  Así le doy opciones más precisas en Katy."
+      },
+      {
+        "start": 34.48,
+        "role": "caller",
+        "text": "Presupuesto, unos trescientos coma cero dólares, recámaras, pues, en realidad, no no no tengo presente ese dato."
+      },
+      {
+        "start": 42.86,
+        "role": "agent",
+        "text": "No se preocupe.  Con trescientos mil hay buenas opciones en Katy.  ¿Prefieren casas nuevas o usadas?  ¿Y cuándo les gustaría mudarse?"
+      },
+      {
+        "start": 50.7,
+        "role": "caller",
+        "text": "Bueno, pues, en realidad, nos gustaría una casa nueva, de ser posible, y mudarnos, la verdad, en quince días o en veinte, a más tardar."
+      },
+      {
+        "start": 59.86,
+        "role": "agent",
+        "text": "Perfecto, casa nueva en Katy y en unos dos o tres semanas.   ¿Me da su nombre y un número de teléfono para que un agente le muestre opciones?"
+      },
+      {
+        "start": 67.01,
+        "role": "caller",
+        "text": "Claro. Mi nombre es Juan Morales. El número de teléfono es siete trece cinco cincuenta y cinco, cero uno cincuenta y"
+      },
+      {
+        "start": 76.59,
+        "role": "agent",
+        "text": "Gracias, Juan.   Le confirmo: casa nueva en Katy, trescientos mil, y mudanza en dos o tres semanas.   Un agente le va a llamar hoy mismo para mostrarle opciones.   ¿Quiere que le mandemos la dirección de la oficina por mensaje de texto?"
+      },
+      {
+        "start": 90.61,
+        "role": "caller",
+        "text": "Sí, me gustaría visitarlos, estaría"
+      },
+      {
+        "start": 96.03,
+        "role": "agent",
+        "text": "Perfecto, Juan.   ¿Prefiere venir este sábado o el lunes?   Ambos días tenemos gente disponible."
+      },
+      {
+        "start": 102.14,
+        "role": "caller",
+        "text": "El sábado en la mañana estaría bien."
+      },
+      {
+        "start": 106.2,
+        "role": "agent",
+        "text": "Listo, Juan. Lo esperamos este sábado en la mañana en la oficina de Mason Road. Le mando la dirección por mensaje de texto. ¡Gracias por llamar y que tenga una excelente tarde!"
+      }
+    ],
+    "callId": "call_e3f90de15642716f8f0d48aa1d7"
   }
 }
