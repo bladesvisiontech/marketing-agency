@@ -988,5 +988,92 @@
       }
     ],
     "callId": "call_6dcc84b9869dcdd0934954faa98"
+  },
+  "dental-es": {
+    "src": "/voice-demo/dental-es.m4a",
+    "duration": 83.5,
+    "transcript": [
+      {
+        "start": 0.58,
+        "role": "agent",
+        "text": "Sonrisa Dental Care, ¿en qué le puedo ayudar?"
+      },
+      {
+        "start": 4.3,
+        "role": "caller",
+        "text": "Hola, ¿cómo estás?"
+      },
+      {
+        "start": 5.34,
+        "role": "caller",
+        "text": "Mira, lo que sucede es que me está doliendo mucho una muela desde el día de ayer."
+      },
+      {
+        "start": 10.56,
+        "role": "agent",
+        "text": "Uy, eso suena incómodo.  ¿Tiene hinchazón, o le cuesta tragar o respirar, o solo le duele?"
+      },
+      {
+        "start": 17.44,
+        "role": "caller",
+        "text": "Bueno, en realidad, solamente me duele, pero sí"
+      },
+      {
+        "start": 23.91,
+        "role": "agent",
+        "text": "Entiendo.  Le puedo dar cita para mañana jueves temprano, o si prefiere, este sábado en la mañana.  ¿Cuál le queda mejor?"
+      },
+      {
+        "start": 31.64,
+        "role": "caller",
+        "text": "Mañana jueves temprano."
+      },
+      {
+        "start": 34.39,
+        "role": "agent",
+        "text": "Perfecto, mañana a las ocho o a las nueve.  ¿Cuál le queda mejor?"
+      },
+      {
+        "start": 38.22,
+        "role": "caller",
+        "text": "A las ocho:cero ¿Aceptan Medicaid?"
+      },
+      {
+        "start": 41.84,
+        "role": "agent",
+        "text": "Sí, aceptamos Medicaid para niños.   ¿La cita es para usted o para un menor?"
+      },
+      {
+        "start": 46.99,
+        "role": "caller",
+        "text": "No, es para mí."
+      },
+      {
+        "start": 49.54,
+        "role": "agent",
+        "text": "Ah, vale. Para adultos no aceptamos Medicaid, pero tenemos un paquete para nuevos pacientes: examen, limpieza y radiografías por setenta y nueve dólares.  ¿Le reservo la cita a las ocho de mañana?"
+      },
+      {
+        "start": 61.63,
+        "role": "caller",
+        "text": "Sí, está bien, por favor."
+      },
+      {
+        "start": 64.1,
+        "role": "agent",
+        "text": "Listo, ya quedó para mañana a las ocho.   ¿Me dice su nombre y un número de teléfono?"
+      },
+      {
+        "start": 68.67,
+        "role": "caller",
+        "text": "Claro, es Nelson Torres, mi número de es siete trece cinco cincuenta y cinco, cero uno cincuenta y dos."
+      },
+      {
+        "start": 75.61,
+        "role": "agent",
+        "text": "Perfecto, Nelson.   Ya quedó para mañana a las ocho.   Le va a llegar un mensaje de confirmación.   Si tiene alguna duda, me avisa.   ¡Que tenga buena tarde!"
+      }
+    ],
+    "callId": "call_99f1d78dd532d8305c0f907ad0c"
   }
 }
