@@ -1244,5 +1244,122 @@
       }
     ],
     "callId": "call_ad4ad21afd7f9cce3fbcaa4e62b"
+  },
+  "taller-en": {
+    "src": "/voice-demo/taller-en.m4a",
+    "duration": 83.8,
+    "transcript": [
+      {
+        "start": 0.4,
+        "role": "agent",
+        "text": "Torque Auto Repair, what's going on with your vehicle?"
+      },
+      {
+        "start": 4.45,
+        "role": "caller",
+        "text": "Hey. My check engine light came on this morning."
+      },
+      {
+        "start": 8.84,
+        "role": "agent",
+        "text": "Okay.  That's always a bit stressful, huh?  Want to bring it in tomorrow morning so the tech can run a diagnostic?  If you get here"
+      },
+      {
+        "start": 16.79,
+        "role": "caller",
+        "text": "Yes."
+      },
+      {
+        "start": 16.68,
+        "role": "agent",
+        "text": "before ten,"
+      },
+      {
+        "start": 17.27,
+        "role": "caller",
+        "text": "Tomorrow morning should be okay, please."
+      },
+      {
+        "start": 20.04,
+        "role": "agent",
+        "text": "Sounds good.  We open at 7:30, and if you get in before 10, they can usually get that done the same day.  What's your name and the best phone number?"
+      },
+      {
+        "start": 30.39,
+        "role": "caller",
+        "text": "Yes. My name is Kevin Walsh. And my phone number is seven one three five"
+      },
+      {
+        "start": 39.79,
+        "role": "agent",
+        "text": "Thanks, Kevin.  What's the rest of the number?  And what's the year,"
+      },
+      {
+        "start": 44.04,
+        "role": "caller",
+        "text": "Five five."
+      },
+      {
+        "start": 43.55,
+        "role": "agent",
+        "text": "make, and model of your car?"
+      },
+      {
+        "start": 46.86,
+        "role": "agent",
+        "text": "So"
+      },
+      {
+        "start": 47.22,
+        "role": "caller",
+        "text": "It's a it's a"
+      },
+      {
+        "start": 47.1,
+        "role": "agent",
+        "text": "that's seven one three,"
+      },
+      {
+        "start": 48.26,
+        "role": "caller",
+        "text": "four f one hundred"
+      },
+      {
+        "start": 51.59,
+        "role": "agent",
+        "text": "Okay, a Ford F one hundred.  What year is it?"
+      },
+      {
+        "start": 56.51,
+        "role": "caller",
+        "text": "twenty nineteen"
+      },
+      {
+        "start": 59.01,
+        "role": "agent",
+        "text": "Okay, a 2019 Ford F one hundred.  I've got you down for tomorrow morning for a check-engine diagnostic.  You'll get a text confirmation.  If you"
+      },
+      {
+        "start": 68.85,
+        "role": "caller",
+        "text": "Yes."
+      },
+      {
+        "start": 68.77,
+        "role": "agent",
+        "text": "arrive before ten, they'll get you started right away.  Anything else you want to mention about how it's running?"
+      },
+      {
+        "start": 75.77,
+        "role": "caller",
+        "text": "No. That's it."
+      },
+      {
+        "start": 77.75,
+        "role": "agent",
+        "text": "Alright, you're all set for tomorrow morning. We'll text you the details. Have a good evening, Kevin."
+      }
+    ],
+    "callId": "call_8e48b9b092efcfa6d07a1b18e0f"
   }
 }

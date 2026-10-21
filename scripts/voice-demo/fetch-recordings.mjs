@@ -78,6 +78,8 @@ for (const key of keys) {
 
   const transcript = (call.transcript_object ?? [])
     .filter((u) => (u.role === "agent" || u.role === "user") && u.content?.trim())
+    // Marcas del transcriptor como "(unintelligible audio)" no se muestran en el demo
+    .filter((u) => !/^\(.*\)$/.test(u.content.trim()))
     .filter((u) => cut === null || (u.words?.[0]?.start ?? 0) < cut)
     .map((u) => ({
       start: Math.round((u.words?.[0]?.start ?? 0) * 100) / 100,
