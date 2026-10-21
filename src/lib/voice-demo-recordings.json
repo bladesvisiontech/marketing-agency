@@ -697,5 +697,102 @@
       }
     ],
     "callId": "call_0deb8f00a5e056e0dc776de3d56"
+  },
+  "abogado-en": {
+    "src": "/voice-demo/abogado-en.m4a",
+    "duration": 100.8,
+    "transcript": [
+      {
+        "start": 0.4,
+        "role": "agent",
+        "text": "Carter & Hayes Law Group, how can we help you?"
+      },
+      {
+        "start": 3.5,
+        "role": "caller",
+        "text": "Hi. I was in a car accident yesterday on six ten. Someone rear end me,"
+      },
+      {
+        "start": 13.03,
+        "role": "agent",
+        "text": "Glad you're okay.  Any injuries, or just the car?"
+      },
+      {
+        "start": 17.7,
+        "role": "caller",
+        "text": "Yes. My neck really hurts, and I went to the ER last night."
+      },
+      {
+        "start": 23.07,
+        "role": "agent",
+        "text": "I'm sorry you're hurting.  We can definitely help with an accident like this.  Do you already have a lawyer, or is this your first time reaching out?"
+      },
+      {
+        "start": 33.78,
+        "role": "caller",
+        "text": "The the first time."
+      },
+      {
+        "start": 36.03,
+        "role": "agent",
+        "text": "Alright, we can set up a free consultation.  Do you want to come in tomorrow, or would Friday work better?"
+      },
+      {
+        "start": 43.32,
+        "role": "caller",
+        "text": "Friday."
+      },
+      {
+        "start": 44.33,
+        "role": "caller",
+        "text": "Please."
+      },
+      {
+        "start": 45.68,
+        "role": "agent",
+        "text": "Okay.  We can do Friday morning around 9:30, or early afternoon around 1.  Which one works better?"
+      },
+      {
+        "start": 53.87,
+        "role": "caller",
+        "text": "Nine thirty should be good, please."
+      },
+      {
+        "start": 56.83,
+        "role": "agent",
+        "text": "Perfect, Friday at 9:30 it is.   Can I get your name and a good phone number?"
+      },
+      {
+        "start": 63.32,
+        "role": "caller",
+        "text": "Yes. For sure. My name is Jorge Ramirez. My my phone number is seven one three five five five zero one forty eight."
+      },
+      {
+        "start": 71.66,
+        "role": "agent",
+        "text": "Thanks, Jorge.  Just a couple more things — was anyone else hurt, and do you have a court date or any deadline coming up?"
+      },
+      {
+        "start": 80.91,
+        "role": "caller",
+        "text": "No. Nothing."
+      },
+      {
+        "start": 82.7,
+        "role": "agent",
+        "text": "Okay.  You're all set for Friday at 9:30. You'll get a confirmation text, and parking is validated at our downtown office.  See you then, Jorge."
+      },
+      {
+        "start": 91.89,
+        "role": "caller",
+        "text": "Perfect. Okay. I wait for the call. Thank you."
+      },
+      {
+        "start": 95.82,
+        "role": "agent",
+        "text": "You're welcome, Jorge. Rest up, and see you Friday morning. Take care."
+      }
+    ],
+    "callId": "call_448a4b254d08f3e4c615f4aedca"
   }
 }
