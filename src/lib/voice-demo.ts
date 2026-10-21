@@ -60,7 +60,8 @@ export type Industry = {
  * Mientras sea null, la web lo explica sin cifras. Ponlo cuando esté
  * confirmado con los precios reales, por ejemplo: { min: 40, max: 150 }.
  */
-export const PLATFORM_MONTHLY_RANGE: { min: number; max: number } | null = null;
+// Medido en las grabaciones: ~$0.19/min. 100–400 llamadas de ~2 min al mes.
+export const PLATFORM_MONTHLY_RANGE: { min: number; max: number } | null = { min: 40, max: 150 };
 
 /**
  * Grabaciones reales de cada industria e idioma. Una industria sin grabación

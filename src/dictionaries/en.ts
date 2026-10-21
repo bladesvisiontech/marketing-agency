@@ -304,7 +304,7 @@ const en = {
     monthly_value: "Based on usage",
     monthly_range: "About USD {min}–{max}",
     monthly_note:
-      "You pay the platform directly, and it depends on the minutes and calls you get. Inmotion doesn't charge a monthly fee.",
+      "You pay the platform directly, and it depends on the minutes and calls you get; the phone number adds about USD 2 a month. Inmotion doesn't charge a monthly fee.",
     pricing_cta: "Talk to an advisor",
     pricing_footnote: "Setup is paid by check or bank transfer, arranged with your advisor.",
     faq_title: "Frequently asked questions",

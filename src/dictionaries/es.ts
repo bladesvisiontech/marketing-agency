@@ -306,7 +306,7 @@ const es: Dictionary = {
     monthly_value: "Según tu uso",
     monthly_range: "Aprox. USD {min}–{max}",
     monthly_note:
-      "La pagas directamente a la plataforma y depende de los minutos y las llamadas que recibas. Inmotion no te cobra mensualidad.",
+      "La pagas directamente a la plataforma y depende de los minutos y las llamadas que recibas; el número de teléfono suma unos USD 2 al mes. Inmotion no te cobra mensualidad.",
     pricing_cta: "Hablar con un asesor",
     pricing_footnote: "El setup se paga por cheque o transferencia, coordinado con tu asesor.",
     faq_title: "Preguntas frecuentes",
