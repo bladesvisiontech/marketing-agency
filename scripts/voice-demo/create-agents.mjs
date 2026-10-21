@@ -16,7 +16,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildPrompt, INDUSTRY_PROMPTS, GREETINGS, BUSINESS_NAMES } from "./prompts.mjs";
-import { VOICES, RETELL_LANGUAGE } from "./config.mjs";
+import { VOICES, RETELL_LANGUAGE, MODEL_CONFIG, STT_MODE } from "./config.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE = join(here, "agents.generated.json");
@@ -50,6 +50,7 @@ for (const { slug, lang, key } of keys) {
   const persona = VOICES[lang].persona;
   const business = BUSINESS_NAMES[slug];
   const llmBody = {
+    model_config: MODEL_CONFIG,
     general_prompt: buildPrompt(slug),
     begin_message: GREETINGS[slug][lang].replaceAll("{agent}", persona).replaceAll("{business}", business),
     default_dynamic_variables: {
@@ -60,9 +61,12 @@ for (const { slug, lang, key } of keys) {
       demo_channel: "recording",
     },
   };
+  const voice = VOICES[lang];
   const agentBody = {
-    voice_id: VOICES[lang].voice_id,
+    voice_id: voice.voice_id,
+    voice_model: voice.voice_id.startsWith("11labs-") ? voice.voice_model : null,
     language: RETELL_LANGUAGE[lang],
+    stt_mode: STT_MODE,
   };
 
   const entry = saved[key];
