@@ -10,9 +10,10 @@
  * proveedor, pon voice_model: null.
  */
 export const VOICES = {
-  // Cristina Campos (ElevenLabs, mexicana). Alternativa en prueba: Anita, custom_voice_7f467ff0356efa0728e3435ac3
-  es: { voice_id: "custom_voice_c170d19359a019b6fb86445f64", persona: "Cristina", voice_model: "eleven_v3_conversational" },
-  en: { voice_id: "11labs-Lily", persona: "Lily", voice_model: "eleven_v3_conversational" },
+  // Anita (ElevenLabs, latina neutra). Con Multilingual v2 suena igual que en la biblioteca de
+  // ElevenLabs; con v3 Conversational le cambiaba el timbre.
+  es: { voice_id: "custom_voice_7f467ff0356efa0728e3435ac3", persona: "Anita", voice_model: "eleven_multilingual_v2" },
+  en: { voice_id: "11labs-Lily", persona: "Lily", voice_model: "eleven_multilingual_v2" },
 };
 
 /** Idioma de Retell para cada idioma de la demo (un idioma por agente: más preciso que el multilingüe). */

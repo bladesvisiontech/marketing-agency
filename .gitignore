@@ -44,3 +44,4 @@ next-env.d.ts
 
 # voice demo: IDs de agentes de Retell
 scripts/voice-demo/agents.generated.json
+scripts/voice-demo/temp-agents.json
