@@ -1075,5 +1075,77 @@
       }
     ],
     "callId": "call_99f1d78dd532d8305c0f907ad0c"
+  },
+  "dental-en": {
+    "src": "/voice-demo/dental-en.m4a",
+    "duration": 75.5,
+    "transcript": [
+      {
+        "start": 0.4,
+        "role": "agent",
+        "text": "Bright Smile Dental Care, how can I help you today?"
+      },
+      {
+        "start": 3.72,
+        "role": "caller",
+        "text": "Hi. I I have had a really bad toothache since year since yesterday."
+      },
+      {
+        "start": 11.98,
+        "role": "agent",
+        "text": "Oof, that sounds rough.  Is it just pain, or do you have any swelling, or trouble swallowing or breathing?"
+      },
+      {
+        "start": 20.99,
+        "role": "caller",
+        "text": "Yeah. It's it's pretty rough, but it's just pain."
+      },
+      {
+        "start": 24.82,
+        "role": "agent",
+        "text": "Okay.  We can get you in first thing tomorrow morning, or Friday if that's better.  Which works for you?"
+      },
+      {
+        "start": 31.53,
+        "role": "caller",
+        "text": "Tomorrow morning, please."
+      },
+      {
+        "start": 33.05,
+        "role": "caller",
+        "text": "The most the fastest bit possible, please."
+      },
+      {
+        "start": 36.81,
+        "role": "agent",
+        "text": "Okay.  We open at 8 AM. Want to come in right at opening?  I'll save you that first spot.  Can I get your name and a good number to reach you?"
+      },
+      {
+        "start": 46.48,
+        "role": "caller",
+        "text": "Yes. For sure. It's Josh Carter. My phone number is seven one three five five five zero one fifty three."
+      },
+      {
+        "start": 55.55,
+        "role": "agent",
+        "text": "Perfect, Josh.  I've got you down for tomorrow at 8 AM.  You'll get a confirmation text.  If anything changes or the pain gets worse, just call us.  See you in the morning!"
+      },
+      {
+        "start": 67.92,
+        "role": "caller",
+        "text": "Thank you."
+      },
+      {
+        "start": 69.77,
+        "role": "agent",
+        "text": "You're welcome, Josh. Hope you feel better soon. See you tomorrow at 8. Take care!"
+      },
+      {
+        "start": 74.94,
+        "role": "caller",
+        "text": "Perfect."
+      }
+    ],
+    "callId": "call_40968c5ddbae75ed4347294957a"
   }
 }
