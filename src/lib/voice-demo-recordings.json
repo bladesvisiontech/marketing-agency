@@ -309,5 +309,112 @@
       }
     ],
     "callId": "call_33ee917736dd93e9555ae5a49bb"
+  },
+  "barberia-en": {
+    "src": "/voice-demo/barberia-en.m4a",
+    "duration": 93.3,
+    "transcript": [
+      {
+        "start": 0.4,
+        "role": "agent",
+        "text": "Hey, thanks for calling Sharp Line Barber Studio. Looking to book a cut?"
+      },
+      {
+        "start": 5.82,
+        "role": "caller",
+        "text": "Hey. Can I get my update with Luis tomorrow afternoon?"
+      },
+      {
+        "start": 9.34,
+        "role": "caller",
+        "text": "please?"
+      },
+      {
+        "start": 11.4,
+        "role": "agent",
+        "text": "Sure.  Luis has openings tomorrow afternoon at 2:30 or 4.  Which one works for you?"
+      },
+      {
+        "start": 18.68,
+        "role": "caller",
+        "text": "Tory is good to me."
+      },
+      {
+        "start": 21.26,
+        "role": "agent",
+        "text": "Okay, you're booked with Luis tomorrow at 2:30.  Can I get your name and a callback number?"
+      },
+      {
+        "start": 27.8,
+        "role": "caller",
+        "text": "Yeah. For sure. It's Tyler Grant."
+      },
+      {
+        "start": 33.47,
+        "role": "agent",
+        "text": "Thanks, Tyler."
+      },
+      {
+        "start": 33.93,
+        "role": "caller",
+        "text": "Sorry. My"
+      },
+      {
+        "start": 34.75,
+        "role": "agent",
+        "text": "And what's"
+      },
+      {
+        "start": 35.05,
+        "role": "caller",
+        "text": "my my phone number is the seven one three five five zero one forty five."
+      },
+      {
+        "start": 41.49,
+        "role": "agent",
+        "text": "Got it.  You're all set for tomorrow at 2:30 with Luis.  You'll get a confirmation text soon.  Anything else I can help with?"
+      },
+      {
+        "start": 48.41,
+        "role": "caller",
+        "text": "Perfect. How much how much for the haircut?"
+      },
+      {
+        "start": 50.9,
+        "role": "caller",
+        "text": "And the beard as well?"
+      },
+      {
+        "start": 52.79,
+        "role": "agent",
+        "text": "The haircut is thirty-five dollars.  And the beard is fifty for both.  Want to add the beard?"
+      },
+      {
+        "start": 69.95,
+        "role": "agent",
+        "text": "Hey Tyler, just checking in — did you want to add the beard tomorrow, or just the haircut?"
+      },
+      {
+        "start": 76.81,
+        "role": "caller",
+        "text": "Add the beer. Too."
+      },
+      {
+        "start": 79.24,
+        "role": "agent",
+        "text": "Perfect.  You're all set for a haircut and beard with Luis tomorrow at 2:30.  See you then!"
+      },
+      {
+        "start": 86.74,
+        "role": "caller",
+        "text": "See you later. Thank you."
+      },
+      {
+        "start": 88.98,
+        "role": "agent",
+        "text": "Thanks, Tyler. See you tomorrow at 2:30. Have a good one!"
+      }
+    ],
+    "callId": "call_f12fd8e7ed841350db1c83914ad"
   }
 }
