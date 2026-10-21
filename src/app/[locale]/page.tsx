@@ -3,6 +3,7 @@ import Link from "next/link";
 import { TrendingUp, Search, ArrowRight, Star, Zap } from "lucide-react";
 import Image from "next/image";
 import AnimateIn from "@/components/AnimateIn";
+import AIReceptionistSection from "@/components/AIReceptionistSection";
 import { getDictionary, isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
@@ -187,6 +188,9 @@ export default async function HomePage({
           </AnimateIn>
         </div>
       </section>
+
+      {/* AI RECEPTIONIST */}
+      <AIReceptionistSection t={t} locale={locale as Locale} />
 
       {/* BENEFITS */}
       <section className="section border-t border-white/[0.06] dot-grid relative overflow-hidden">

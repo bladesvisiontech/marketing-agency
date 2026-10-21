@@ -11,7 +11,7 @@ export function middleware(request: NextRequest) {
     pathname.startsWith("/api") ||
     pathname.startsWith("/inmotion-logo") ||
     pathname.startsWith("/favicon") ||
-    /\.(svg|png|jpg|jpeg|gif|webp|ico|css|js|woff2?)$/.test(pathname)
+    /\.(svg|png|jpg|jpeg|gif|webp|ico|css|js|woff2?|mp3|m4a|wav|ogg|mp4)$/.test(pathname)
   ) {
     return NextResponse.next();
   }

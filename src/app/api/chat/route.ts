@@ -15,6 +15,7 @@ Services and prices:
 - SEO: USD 500/month — Google positioning to attract qualified traffic
 - Digital Audit: USD 800 — Full analysis of what's blocking online sales
 - E-commerce: USD 1,400 — Online store optimized to sell from day one
+- AI Receptionist: answers the business's phone calls 24/7 in English and Spanish with a natural voice, books appointments, takes messages, flags urgent calls, and includes an app with real-time push notifications for every call. Pricing: a one-time setup fee quoted by an advisor (there is no public price — never invent one), plus a monthly voice-platform fee the client pays directly based on minutes and calls; Inmotion charges no monthly fee. There is no Stripe link for this service: send them to /demo-ia to hear real recorded calls, then to /contact for a quote. Never name the technology providers behind it.
 
 Key rules:
 - Never give prices without first understanding the prospect's need

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import type { FormEvent } from "react";
 import { useParams } from "next/navigation";
 import { ArrowRight, Loader2 } from "lucide-react";
@@ -18,6 +18,16 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  // La recepcionista IA enlaza aquí con ?service=ai-receptionist (índice 4 de goals en ambos idiomas)
+  const search = useSyncExternalStore(
+    () => () => {},
+    () => window.location.search,
+    () => ""
+  );
+  const presetGoal =
+    new URLSearchParams(search).get("service") === "ai-receptionist" ? t.fields.goals[4] : "";
+  const goal = form.goal || presetGoal;
+
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
@@ -31,7 +41,7 @@ export default function ContactPage() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, locale }),
+        body: JSON.stringify({ ...form, goal, locale }),
       });
 
       if (!res.ok) throw new Error("Failed");
@@ -101,7 +111,7 @@ export default function ContactPage() {
                 <select
                   name="goal"
                   required
-                  value={form.goal}
+                  value={goal}
                   onChange={handleChange}
                   className="w-full bg-white/[0.03] border border-white/[0.08] rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-white/20 transition-colors"
                 >
