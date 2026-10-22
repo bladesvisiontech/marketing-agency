@@ -19,8 +19,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { VoiceOrb } from "@/components/ui/voice-orb";
-import { BRAND_ORB_COLORS } from "@/components/ui/voice-orb-demo";
+import { VoicePoweredOrb } from "@/components/ui/voice-powered-orb";
 import RoiCalculator from "@/components/RoiCalculator";
 import type { Dictionary } from "@/dictionaries/en";
 import type { Locale } from "@/lib/i18n";
@@ -244,13 +243,10 @@ export default function VoiceDemo({ t, locale, initialIndustry, showSellerNotes 
               </div>
 
               <div className="flex flex-1 flex-col items-center justify-center py-10">
-                <VoiceOrb
-                  analyser={analyser}
-                  colors={BRAND_ORB_COLORS}
-                  speed={phase === "playing" ? 1 : 0.35}
-                  aria-label={t.orb_label}
-                  className="w-56 sm:w-72"
-                />
+                <div role="img" aria-label={t.orb_label} className="w-56 sm:w-72 aspect-square">
+                  {/* Sigue la voz de la grabación; nunca pide el micrófono */}
+                  <VoicePoweredOrb analyser={analyser} />
+                </div>
                 <p className="mt-8 flex items-center gap-2 text-sm text-white/50 text-center" aria-live="polite">
                   <span
                     aria-hidden

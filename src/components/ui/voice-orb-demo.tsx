@@ -1,27 +1,22 @@
 "use client";
 
-import { useAnimationFrame, useMotionValue, useReducedMotion } from "motion/react";
-import { VoiceOrb, type VoiceOrbProps } from "@/components/ui/voice-orb";
+import { VoicePoweredOrb } from "@/components/ui/voice-powered-orb";
+import { cn } from "@/lib/utils";
 
-/** Pigmento, brillo y sombra del orbe con el morado y azul del logo. */
-export const BRAND_ORB_COLORS = ["#7a3cf2", "#d6c4ff", "#0f2a8c"] as const;
+/** Sílabas y pausas simuladas: el orbe se ve "hablando" sin audio ni micrófono. */
+function simulatedLevel() {
+  if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return 0;
+  const t = performance.now() / 1000;
+  const phrase = Math.max(0, Math.sin(t * 0.85));
+  const syllable = Math.max(0, Math.sin(t * 9.3 + Math.sin(t * 2.1)));
+  return phrase * (0.12 + syllable ** 2 * 0.72);
+}
 
-/** VoiceOrb con sílabas y pausas simuladas: se ve "hablando" sin abrir audio. */
-export function SimulatedVoiceOrb({
-  colors = BRAND_ORB_COLORS,
-  ...props
-}: Omit<VoiceOrbProps, "activity" | "analyser">) {
-  const activity = useMotionValue(0);
-  const reducedMotion = useReducedMotion();
-  useAnimationFrame((time) => {
-    if (reducedMotion) {
-      activity.set(0);
-      return;
-    }
-    const t = time / 1000;
-    const phrase = Math.max(0, Math.sin(t * 0.85));
-    const syllable = Math.max(0, Math.sin(t * 9.3 + Math.sin(t * 2.1)));
-    activity.set(phrase * (0.12 + syllable ** 2 * 0.72));
-  });
-  return <VoiceOrb activity={activity} colors={colors} {...props} />;
+/** Orbe de voz con actividad simulada (home y página del servicio). */
+export function SimulatedVoiceOrb({ className }: { className?: string }) {
+  return (
+    <div className={cn("aspect-square", className)} aria-hidden>
+      <VoicePoweredOrb getLevel={simulatedLevel} />
+    </div>
+  );
 }
