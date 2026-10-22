@@ -65,6 +65,7 @@ for (const { slug, lang, key } of keys) {
   const agentBody = {
     voice_id: voice.voice_id,
     voice_model: voice.voice_model ?? null,
+    ...(voice.voice_temperature !== undefined ? { voice_temperature: voice.voice_temperature } : {}),
     language: RETELL_LANGUAGE[lang],
     stt_mode: STT_MODE,
     ...TURN_TAKING,

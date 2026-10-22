@@ -125,9 +125,15 @@ async function saveAudio(url, key) {
 
   const out = join(AUDIO_DIR, `${key}.m4a`);
   try {
+    // Volumen estable: el compresor y dynaudnorm emparejan una frase que salga más fuerte que
+    // el resto (la voz a veces se dispara), y loudnorm deja todas las grabaciones al mismo nivel.
+    const norm = tmp.replace(/\.\w+$/, ".norm.wav");
+    const LEVELING = "acompressor=threshold=0.1:ratio=3:attack=5:release=150,dynaudnorm=f=200:g=11:m=4,loudnorm=I=-18:TP=-1.5:LRA=7";
+    execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-i", tmp, "-af", LEVELING, "-ar", "24000", "-ac", "1", norm], { stdio: "pipe" });
     // Retell graba en mono a 24 kHz: AAC a 48 kbps conserva la voz y pesa ~0.36 MB por minuto
-    execFileSync("afconvert", ["-f", "m4af", "-d", "aac", "-b", "48000", tmp, out], { stdio: "pipe" });
+    execFileSync("afconvert", ["-f", "m4af", "-d", "aac", "-b", "48000", norm, out], { stdio: "pipe" });
     rmSync(tmp);
+    rmSync(norm);
     return `/voice-demo/${key}.m4a`;
   } catch {
     const raw = join(AUDIO_DIR, `${key}.${ext}`);

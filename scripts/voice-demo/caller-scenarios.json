@@ -1,0 +1,42 @@
+{
+  "restaurante-en": {
+    "caller_name": "Ryan Brooks",
+    "caller_phone": "713-555-0143",
+    "scenario": "It's your 10th wedding anniversary this Saturday. You want a table for two around 7:30. Once the table is sorted, ask if they could decorate the table or do something special for the anniversary, like flowers or a candle on dessert. Later ask if there's parking."
+  },
+  "barberia-en": {
+    "caller_name": "Tyler Grant",
+    "caller_phone": "713-555-0145",
+    "scenario": "You're getting married next Saturday. You want a fade with Luis that Saturday morning. After that, ask if they can also take your four groomsmen the same morning, and how much a cut and beard trim costs."
+  },
+  "contador-en": {
+    "caller_name": "Jason Miller",
+    "caller_phone": "713-555-0147",
+    "scenario": "You're self-employed (you do landscaping) and need your taxes done. You also just got a letter from the IRS and you're a little worried about it. You'd like to come in Saturday morning. Ask what you should bring."
+  },
+  "abogado-en": {
+    "caller_name": "Marcus Hill",
+    "caller_phone": "713-555-0149",
+    "scenario": "Someone rear-ended you yesterday on 610. Your neck really hurts and you went to the ER last night. The other driver's insurance company already called you and wants a recorded statement; ask whether you should talk to them. Also ask if the consultation costs anything."
+  },
+  "hvac-en": {
+    "caller_name": "Brian Cooper",
+    "caller_phone": "713-555-0151",
+    "scenario": "Your AC is blowing warm air since this morning, it's really hot in the house, and you have a three-month-old baby at home. Your address is 2215 Maple Ridge Lane, Katy, 77494. Ask how soon someone can come and how much the visit costs."
+  },
+  "dental-en": {
+    "caller_name": "Kevin Turner",
+    "caller_phone": "713-555-0153",
+    "scenario": "You chipped your front tooth last night and you have a job interview on Thursday, so you need it fixed before then. You don't have dental insurance; ask what a visit costs and whether they have payment plans."
+  },
+  "taller-en": {
+    "caller_name": "Kevin Walsh",
+    "caller_phone": "713-555-0155",
+    "scenario": "Your check engine light came on and your brakes started grinding. It's a 2019 Ford F-150. You're driving to Austin on Friday with your family, so you need it checked before then. Ask how much the diagnostic is and whether they can give you a ride while it's in the shop."
+  },
+  "bienes-raices-en": {
+    "caller_name": "Daniel Reed",
+    "caller_phone": "713-555-0157",
+    "scenario": "You're relocating from Chicago for a new job in Katy and need to buy a home within about two months. You're pre-approved up to 400 thousand and want four bedrooms near good schools. Since you're still in Chicago, ask if an agent can do a video tour of a few homes."
+  }
+}
