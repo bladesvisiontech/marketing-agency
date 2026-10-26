@@ -57,7 +57,7 @@ const en = {
     services: [
       {
         title: "Websites",
-        price: "USD 500",
+        price: "USD 700",
         desc: "Landing pages and strategic sites designed to generate leads and sales.",
         cta: "I want my website",
         stripeHref: "https://buy.stripe.com/website700",
@@ -143,7 +143,7 @@ const en = {
       h1_main: "Websites that turn",
       h1_sub: "visitors into clients",
       subheadline: "Your site should help you sell. Not just look good.",
-      cta: "Start my project — USD 500",
+      cta: "Start my project — USD 700",
       cta_questions: "I have questions",
       includes_title: "What's included",
       includes: [
@@ -165,7 +165,7 @@ const en = {
       ],
       cta_final_h2: "Your site can be your best salesperson.",
       cta_final_sub: "A strategic asset that works 24/7 to attract and convert clients.",
-      cta_final_btn: "I want my website — USD 500",
+      cta_final_btn: "I want my website — USD 700",
     },
     seo: {
       badge: "SEO",

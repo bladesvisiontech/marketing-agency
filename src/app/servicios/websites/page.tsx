@@ -5,7 +5,7 @@ import AnimateIn from "@/components/AnimateIn";
 
 export const metadata: Metadata = {
   title: "Websites que convierten | Inmotion",
-  description: "Sitios rápidos, estratégicos y enfocados en conversión. Desde USD 500.",
+  description: "Sitios rápidos, estratégicos y enfocados en conversión. Desde USD 700.",
 };
 
 const includes = [
@@ -55,7 +55,7 @@ export default function WebsitesPage() {
                 rel="noopener noreferrer"
                 className="btn-primary text-base px-6 py-3"
               >
-                Empezar mi proyecto — USD 500 <ArrowRight size={16} />
+                Empezar mi proyecto — USD 700 <ArrowRight size={16} />
               </a>
               <Link href="/contacto" className="btn-outline text-base px-6 py-3">
                 Tengo preguntas
@@ -115,7 +115,7 @@ export default function WebsitesPage() {
               rel="noopener noreferrer"
               className="btn-primary text-base px-7 py-3.5 inline-flex"
             >
-              Quiero mi website — USD 500 <ArrowRight size={16} />
+              Quiero mi website — USD 700 <ArrowRight size={16} />
             </a>
           </AnimateIn>
         </div>

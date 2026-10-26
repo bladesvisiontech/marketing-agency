@@ -59,7 +59,7 @@ const es: Dictionary = {
     services: [
       {
         title: "Websites",
-        price: "USD 500",
+        price: "USD 700",
         desc: "Landing pages y sitios estratégicos diseñados para generar contactos y ventas.",
         cta: "Quiero mi website",
         stripeHref: "https://buy.stripe.com/website700",
@@ -145,7 +145,7 @@ const es: Dictionary = {
       h1_main: "Websites que convierten",
       h1_sub: "visitas en clientes",
       subheadline: "Tu sitio debería ayudarte a vender. No solo verse bien.",
-      cta: "Empezar mi proyecto — USD 500",
+      cta: "Empezar mi proyecto — USD 700",
       cta_questions: "Tengo preguntas",
       includes_title: "Qué incluye",
       includes: [
@@ -167,7 +167,7 @@ const es: Dictionary = {
       ],
       cta_final_h2: "Tu sitio puede ser tu mejor vendedor.",
       cta_final_sub: "Un activo estratégico que trabaja 24/7 para atraer y convertir clientes.",
-      cta_final_btn: "Quiero mi website — USD 500",
+      cta_final_btn: "Quiero mi website — USD 700",
     },
     seo: {
       badge: "SEO",
