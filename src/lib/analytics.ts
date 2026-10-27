@@ -1,6 +1,6 @@
 // Google Analytics 4. El ID de medición (G-…) no es secreto: es público en cada página.
-// Mientras esté vacío, no se carga nada.
-export const GA_MEASUREMENT_ID = "";
+// Propiedad "inmotionteam.com" (cuenta inmotionteam01@gmail.com). Vacío = no se carga nada.
+export const GA_MEASUREMENT_ID = "G-538MNNER28";
 
 type GtagWindow = Window & { gtag?: (command: "event", name: string, params?: Record<string, unknown>) => void };
 
