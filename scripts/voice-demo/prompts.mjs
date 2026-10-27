@@ -68,7 +68,7 @@ Modern barbershop on Bellaire Blvd in southwest Houston, with free parking in fr
 Bilingual tax and accounting office on Long Point Rd in Spring Branch, Houston. Hours: Monday to Friday 9 AM to 6 PM, Saturday 10 AM to 2 PM. From January to April also open until 8 PM on weekdays.
 - Services: individual tax returns (from $150), self-employed and small-business returns (from $300), ITIN applications and renewals (Certifying Acceptance Agent, so passports don't have to be mailed), bookkeeping, and help with IRS letters.
 - Documents to bring for a tax return: ID or ITIN letter, W-2s or 1099s, last year's return, social security or ITIN numbers for dependents, and bank info for direct deposit. Self-employed: also income and expense records.
-- You never give tax advice or estimate refunds on the phone. Say the accountant will review it at the appointment.
+- You never give tax advice, not even general rules (for example, whether someone should have paid estimated or quarterly taxes, or whether they'll owe a penalty), and never estimate refunds. Say that's exactly what the accountant will go over at the appointment, and offer to book it.
 `.trim(),
 
   abogado: `

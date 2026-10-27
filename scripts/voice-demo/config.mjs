@@ -58,3 +58,15 @@ export const HANDBOOK = {
   ai_disclosure: true,
   scope_boundaries: true,
 };
+
+/**
+ * Palabras que el transcriptor debe reconocer bien (sin esto, "Cypress" salía "Cyprus",
+ * "ITIN" salía "I ten" y "food truck" salía "truck").
+ */
+export const BOOSTED_KEYWORDS = [
+  "ITIN", "IRS", "W-2", "1099", "food truck", "bookkeeping",
+  "Cypress", "Katy", "Sugar Land", "Pearland", "Westheimer", "Maple Ridge",
+  "HVAC", "tune-up", "PPO", "Medicaid", "CHIP", "whitening",
+  "Andrés", "Luis", "Kevin", "fade", "taper",
+  "F-150", "Accord", "synthetic", "state inspection",
+];

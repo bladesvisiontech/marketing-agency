@@ -16,7 +16,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildPrompt, INDUSTRY_PROMPTS, GREETINGS, BUSINESS_NAMES } from "./prompts.mjs";
-import { VOICES, RETELL_LANGUAGE, MODEL_CONFIG, STT_MODE, TURN_TAKING, HANDBOOK } from "./config.mjs";
+import { VOICES, RETELL_LANGUAGE, MODEL_CONFIG, STT_MODE, TURN_TAKING, HANDBOOK, BOOSTED_KEYWORDS } from "./config.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE = join(here, "agents.generated.json");
@@ -70,6 +70,7 @@ for (const { slug, lang, key } of keys) {
     stt_mode: STT_MODE,
     ...TURN_TAKING,
     handbook_config: HANDBOOK,
+    boosted_keywords: BOOSTED_KEYWORDS,
   };
 
   const entry = saved[key];

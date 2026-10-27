@@ -262,7 +262,7 @@
   },
   "barberia-en": {
     "src": "/voice-demo/barberia-en.m4a",
-    "duration": 111.5,
+    "duration": 66.2,
     "transcript": [
       {
         "start": 0.4,
@@ -270,82 +270,77 @@
         "text": "Hey, thanks for calling Sharp Line Barber Studio. Looking to book a cut?"
       },
       {
-        "start": 5.36,
+        "start": 5.66,
         "role": "caller",
-        "text": "Yeah. Actually, I'm getting married next Saturday, so I wanna see if I can get a fade with Luis that morning. Do you know if he's got any spots open?"
+        "text": "Hey. Actually, I've got a four o'clock with Andres today, but I'm stuck on I ten and gonna be about twenty minutes late. Is that still okay?"
       },
       {
-        "start": 12.68,
+        "start": 12.85,
         "role": "agent",
-        "text": "Congrats!  Let me check if Luis has any spots open next Saturday morning.  He usually books up fast on weekends, but I can offer either 9 AM or 10:30.  Which one works better for you?"
+        "text": "Running late happens.  If you're about twenty minutes out, you might need to reschedule since it's past our fifteen-minute window.  Want me to check if Andrés can squeeze you in later today, or just push it to tomorrow?"
       },
       {
-        "start": 25,
+        "start": 24.72,
         "role": "caller",
-        "text": "Oh, thanks. Let's do nine AM. Just wanna get it done early."
+        "text": "Yeah. Let's just move it to tomorrow at the same time."
       },
       {
-        "start": 29.45,
+        "start": 27.24,
+        "role": "caller",
+        "text": "That'd be easier."
+      },
+      {
+        "start": 29.33,
         "role": "agent",
-        "text": "Perfect, I've got you down for a fade with Luis next Saturday at 9 AM.  Can I get your name and a good number to send the confirmation?"
+        "text": "Perfect, I'll move you to tomorrow at 4 with Andrés.  You'll get a confirmation text.  Anything else I can help with?"
       },
       {
-        "start": 37.29,
+        "start": 36.69,
         "role": "caller",
-        "text": "Yeah. It's Tyler Grant. And my number is seven one five five five zero or one or five."
+        "text": "Yeah. Actually, how much is a hot towel shave?"
       },
       {
-        "start": 43.79,
+        "start": 38.99,
+        "role": "caller",
+        "text": "Kinda wanna add that for tomorrow too."
+      },
+      {
+        "start": 41.84,
         "role": "agent",
-        "text": "Thanks, Tyler.  You're all set for a fade with Luis next Saturday at 9 AM.  You'll get a confirmation text soon.  Anything else you need today?"
+        "text": "The hot towel shave is thirty dollars.  Want to add that to your four o'clock with Andrés tomorrow?"
       },
       {
-        "start": 53.24,
+        "start": 48.15,
         "role": "caller",
-        "text": "Yeah. Actually, I've got four groomsmen who need cuts that same morning. Can you fit them in around then too?"
+        "text": "Yeah. Go ahead and add it."
       },
       {
-        "start": 59.27,
+        "start": 50.49,
         "role": "agent",
-        "text": "We can definitely try to get them in too.  Do they all want fades with Luis, or are they okay with Andrés or Kevin?  Luis can only take one at a time, so using the other barbers will help get everyone done faster."
+        "text": "You're all set for a haircut and hot towel shave with Andrés tomorrow at 4.  You'll get a confirmation text.  Anything else I can help with?"
       },
       {
-        "start": 72.78,
+        "start": 59.36,
         "role": "caller",
-        "text": "Oh, that's fine. As long as they get a good cut, they're cool with whoever's available. Just need them looking sharp."
+        "text": "Nope. That's it."
       },
       {
-        "start": 78.93,
+        "start": 60.27,
+        "role": "caller",
+        "text": "Thanks so much."
+      },
+      {
+        "start": 61.23,
+        "role": "caller",
+        "text": "Bye."
+      },
+      {
+        "start": 63.33,
         "role": "agent",
-        "text": "Sounds good.  I can book the four of them with Andrés and Kevin right around that 9 AM slot.  Can I get their names and numbers so I can send out confirmations?"
-      },
-      {
-        "start": 89.54,
-        "role": "caller",
-        "text": "Yeah. Let me grab their info real quick and text it over Is that okay?"
-      },
-      {
-        "start": 92.83,
-        "role": "caller",
-        "text": "I just don't have it right in front of me."
-      },
-      {
-        "start": 95.85,
-        "role": "agent",
-        "text": "No worries.  Just text their names and numbers whenever you have them, and I'll get everyone booked for the morning.  You're all set for now, Tyler.  Good luck with the wedding!"
-      },
-      {
-        "start": 105.33,
-        "role": "caller",
-        "text": "Thanks. You too. Bye."
-      },
-      {
-        "start": 107.98,
-        "role": "agent",
-        "text": "Thanks, Tyler. Have a great day, and congrats again! Bye."
+        "text": "Alright, take care, see you tomorrow. Have a good one!"
       }
     ],
-    "callId": "call_418bbc3f9de0e7b2fa733efa7d8"
+    "callId": "call_7a7fea4d6298cf460632839b657"
   },
   "contador-es": {
     "src": "/voice-demo/contador-es.m4a",
@@ -466,7 +461,7 @@
   },
   "contador-en": {
     "src": "/voice-demo/contador-en.m4a",
-    "duration": 83.2,
+    "duration": 141,
     "transcript": [
       {
         "start": 0.4,
@@ -474,67 +469,117 @@
         "text": "Hi, thank you for calling Bayou City Tax & Accounting. How can I help?"
       },
       {
-        "start": 5.76,
+        "start": 5.74,
         "role": "caller",
-        "text": "Hey. Yeah. I was hoping to come in this Saturday morning. I do landscaping, so I'm self employed, and I need my taxes done. Also, I just got a letter from the IRS, and it's kinda freaking me out a bit. What should I bring in?"
+        "text": "Hey. Yeah. I opened a food truck this year, and I've never filed taxes for a business before."
       },
       {
-        "start": 17.15,
+        "start": 12.32,
         "role": "agent",
-        "text": "You're not alone — IRS letters stress everyone out.  For your taxes, you'll need your ID, last year's return, any W-2s or 1099s, your income and expense records, and Social Security or ITIN numbers for dependents.  If you want direct deposit, bring your bank info.  And bring that IRS letter so the accountant can look it over.  Want me to book you for this Saturday morning?"
+        "text": "That's actually really common.  An accountant can walk you through it step by step.  Want to book a time this week, or would next week work better?"
       },
       {
-        "start": 39.93,
+        "start": 20.9,
         "role": "caller",
-        "text": "Yeah. That sounds good."
+        "text": "This week works if you have anything open."
       },
       {
-        "start": 41.21,
-        "role": "caller",
-        "text": "Saturday morning works."
-      },
-      {
-        "start": 42.34,
-        "role": "caller",
-        "text": "Can you do around nine or ten?"
-      },
-      {
-        "start": 45.21,
+        "start": 23.73,
         "role": "agent",
-        "text": "We open at ten on Saturdays, so I can get you in right at ten.  Does ten work for you?"
+        "text": "Yeah, we've got some spots.  Tomorrow's pretty open — afternoon or late morning.  Saturday we do 10 or noon.  Which one works best for you?"
       },
       {
-        "start": 51.03,
+        "start": 32.82,
         "role": "caller",
-        "text": "Tense. Perfect. I'll take that. You need my phone number to book it?"
+        "text": "Let's go with tomorrow, late morning."
       },
       {
-        "start": 55.42,
-        "role": "agent",
-        "text": "Yep, just need your name and a callback number.  What's your first name, and what's the best number to reach you?"
-      },
-      {
-        "start": 61.54,
+        "start": 34.52,
         "role": "caller",
-        "text": "Yeah. It's Jason. And my number is seven one three five five five zero one four seven."
+        "text": "That's easier for me."
       },
       {
-        "start": 67.55,
+        "start": 36.6,
         "role": "agent",
-        "text": "Got it, Jason.  You're all set for Saturday at ten.  You'll get a confirmation text, and just bring those documents and the IRS letter.  See you then!"
+        "text": "Perfect, tomorrow late morning.  What's your name and the best number to reach you?"
       },
       {
-        "start": 77.18,
+        "start": 41.56,
         "role": "caller",
-        "text": "Awesome. Thanks. Bye."
+        "text": "Yeah. It's Jason Miller. And my number is seven one three five five five zero one forty seven."
       },
       {
-        "start": 79.53,
+        "start": 48,
         "role": "agent",
-        "text": "Thanks for calling, Jason. See you Saturday at ten. Have a good one!"
+        "text": "Got it, Jason.  You're all set for tomorrow.  You'll get a confirmation text.  Just bring your ID, last year's return if you have it, income and expense records, and any tax documents.  Anything else you need help with?"
+      },
+      {
+        "start": 61.4,
+        "role": "caller",
+        "text": "Yeah. So am I supposed to be paying anything during the year?"
+      },
+      {
+        "start": 64.11,
+        "role": "caller",
+        "text": "Like, I just kinda waited till now."
+      },
+      {
+        "start": 67,
+        "role": "agent",
+        "text": "That’s totally normal. A lot of people do that.  The accountant will go over everything with you at your appointment and let you know if anything needs to be fixed.  You’re good for now.  Anything else you're wondering about?"
+      },
+      {
+        "start": 79.21,
+        "role": "caller",
+        "text": "Yeah. Can you guys also help with monthly bookkeeping?"
+      },
+      {
+        "start": 81.98,
+        "role": "caller",
+        "text": "Just don't wanna fall behind on that."
+      },
+      {
+        "start": 84.33,
+        "role": "agent",
+        "text": "Yeah, we can definitely do monthly bookkeeping.  The accountant can go over your options with you at your appointment and help set it up, so you don't have to worry about falling behind.  You're on the right track."
+      },
+      {
+        "start": 97.04,
+        "role": "caller",
+        "text": "Oh, cool. One more thing. My wife needs to renew her ITIN, but I'm a little nervous about mailing her passport. Is there another way to do that?"
+      },
+      {
+        "start": 105.58,
+        "role": "agent",
+        "text": "Yeah, you actually don't have to mail her passport.  We're a Certifying Acceptance Agent, so she can bring it in and we verify it here.  Makes it a lot less stressful.  Want to book her for the same time, or a different day?"
+      },
+      {
+        "start": 118.39,
+        "role": "caller",
+        "text": "Oh, that's way better. Yeah. Just book her with me tomorrow if that's okay."
+      },
+      {
+        "start": 122.61,
+        "role": "agent",
+        "text": "Alright, I'll put you both down for tomorrow late morning.  She just needs to bring her passport and any ITIN letters she has.  You'll both get a confirmation text.  Anything else I can help with?"
+      },
+      {
+        "start": 134.07,
+        "role": "caller",
+        "text": "Nope. That's everything. Thanks so much."
+      },
+      {
+        "start": 136.19,
+        "role": "caller",
+        "text": "Bye."
+      },
+      {
+        "start": 137.78,
+        "role": "agent",
+        "text": "Thanks, Jason. See you both tomorrow. Have a great day!"
       }
     ],
-    "callId": "call_e86ea3240d224eb08c1396f47b0"
+    "callId": "call_25bf9eebcf1eb8389a5ca74e88f"
   },
   "abogado-es": {
     "src": "/voice-demo/abogado-es.m4a",
@@ -630,7 +675,7 @@
   },
   "abogado-en": {
     "src": "/voice-demo/abogado-en.m4a",
-    "duration": 67.8,
+    "duration": 79.7,
     "transcript": [
       {
         "start": 0.4,
@@ -638,52 +683,87 @@
         "text": "Carter & Hayes Law Group, how can we help you?"
       },
       {
-        "start": 3.98,
+        "start": 4.32,
         "role": "caller",
-        "text": "Hey. Yeah. I just had a car accident yesterday. Someone rear ended me on six ten. My neck's killing me, and I went to the ER. I just wanted to check if I need to talk to the other driver's insurance. They already called and want a recorded statement."
+        "text": "Hi. Yeah. I just got served with custody papers."
       },
       {
-        "start": 17.67,
+        "start": 7.73,
         "role": "agent",
-        "text": "I'm really sorry you're hurting.  I can't give legal advice over the phone, but you definitely don't have to give a recorded statement before talking to an attorney.  Want me to have a lawyer call you today to walk you through what to do next?"
+        "text": "I'm sorry you're dealing with that.  Are you looking to set up a consultation with one of our attorneys?"
       },
       {
-        "start": 31.03,
+        "start": 13.83,
         "role": "caller",
-        "text": "Oh, okay. Yeah. That'd be great. Does it cost anything for the call?"
+        "text": "Yeah. I think I do. The first hearing is actually next Tuesday."
       },
       {
-        "start": 35.47,
+        "start": 17.85,
         "role": "agent",
-        "text": "Nope, it's always free.  I just need your name and a good phone number, and an attorney will call you today.  What's your name?"
+        "text": "Okay, that's coming up fast.  I'll mark this as urgent so an attorney calls you today.  Can I get your name and a callback number?"
       },
       {
-        "start": 42.66,
+        "start": 25.68,
         "role": "caller",
         "text": "Yeah. It's Marcus Hill. And my number is seven one three five five five zero one four nine."
       },
       {
-        "start": 48.97,
+        "start": 32.16,
         "role": "agent",
-        "text": "Thanks, Marcus.  I've got your info down, and I'm marking this as urgent since you're injured.  An attorney will call you today at seven one three, five five five, zero one four nine.  Hang in there."
+        "text": "Got it, Marcus.  When did you get served, and can you give me a quick idea of what's in the papers?"
       },
       {
-        "start": 61.63,
+        "start": 38.76,
         "role": "caller",
-        "text": "Thanks so much."
+        "text": "I got them yesterday. It's about changing the custody schedule."
       },
       {
-        "start": 62.67,
+        "start": 42.61,
         "role": "caller",
-        "text": "Bye."
+        "text": "My ex wants to switch things up and get more time with our son."
       },
       {
-        "start": 64.15,
+        "start": 45.71,
+        "role": "caller",
+        "text": "That's kinda all I know right now."
+      },
+      {
+        "start": 48.19,
         "role": "agent",
-        "text": "Take care, Marcus. Someone will reach out soon. Have a good day."
+        "text": "That's totally fine.  I've marked this urgent, so an attorney will call you today to go over the next steps before Tuesday.  Anything else you want me to pass along?"
+      },
+      {
+        "start": 57.47,
+        "role": "caller",
+        "text": "Yeah. Just wondering. How much is a consultation?"
+      },
+      {
+        "start": 60.49,
+        "role": "caller",
+        "text": "And does that go toward hiring?"
+      },
+      {
+        "start": 61.93,
+        "role": "caller",
+        "text": "you if I decide to?"
+      },
+      {
+        "start": 64.3,
+        "role": "agent",
+        "text": "Yeah, the consultation is a hundred dollars, but if you hire the firm, that goes right toward your case.   So you're not paying extra."
+      },
+      {
+        "start": 72.76,
+        "role": "caller",
+        "text": "Oh, perfect."
+      },
+      {
+        "start": 75.27,
+        "role": "agent",
+        "text": "Alright, Marcus, you're all set. Someone will call you today. Take care, and good luck."
       }
     ],
-    "callId": "call_0461b692f73d67a19788edca834"
+    "callId": "call_31fe09b8efdc843d4d462bbdf9b"
   },
   "hvac-es": {
     "src": "/voice-demo/hvac-es.m4a",
@@ -779,7 +859,7 @@
   },
   "hvac-en": {
     "src": "/voice-demo/hvac-en.m4a",
-    "duration": 72.3,
+    "duration": 89.9,
     "transcript": [
       {
         "start": 0.4,
@@ -787,47 +867,92 @@
         "text": "Thanks for calling Polar Air Heating & Cooling. What's going on with your system?"
       },
       {
-        "start": 5.6,
+        "start": 5.36,
         "role": "caller",
-        "text": "Yeah. The AC is blowing, but it's just warm air. It started this morning, and the house is getting pretty hot. I've got a three month old at home, so I really need someone out as soon as possible. How soon could you get someone out here?"
+        "text": "Yeah. I'm thinking about replacing my AC. Do you guys do estimates for a new system?"
       },
       {
-        "start": 17.54,
+        "start": 10.73,
         "role": "agent",
-        "text": "I'll flag this as an emergency right away, especially with a baby at home.  A technician will call you within thirty minutes to get someone out.  Can I get your name, address, and the best phone number?"
+        "text": "Yep, we do free estimates.  Want to set up a time for someone to come take a look?"
       },
       {
-        "start": 29.18,
+        "start": 16.17,
         "role": "caller",
-        "text": "Thanks. It's Brian Cooper. The address is twenty two fifteen Maple Ridge Lane in Katy seventy seven four nine four. And my number is seven one one three five five five zero zero one fifty one."
+        "text": "Oh, perfect. How soon could someone get out here?"
       },
       {
-        "start": 40.63,
+        "start": 19.84,
         "role": "agent",
-        "text": "Thanks, Brian.  I've got your info and I've flagged this as an emergency.  A technician will call you back within thirty minutes to get someone out as soon as possible.  Hang in there, help's on the way."
+        "text": "Earliest is tomorrow morning or Saturday afternoon.  Both are pretty open right now.  Which one works better for you?"
       },
       {
-        "start": 51.54,
+        "start": 27.31,
         "role": "caller",
-        "text": "Oh, perfect. Thanks so much. Just one more thing. How much is the visit gonna cost?"
+        "text": "Tomorrow morning works. What time are you thinking?"
       },
       {
-        "start": 57.13,
+        "start": 30.48,
         "role": "agent",
-        "text": "The diagnostic visit is eighty-nine dollars, but that fee gets waived if you approve the repair.  So you'd only pay for the actual repair."
+        "text": "Earliest is 7, or 9.  Mornings book up fast, so I'd grab one of those.  Which one works better?"
       },
       {
-        "start": 66.22,
+        "start": 37.03,
         "role": "caller",
-        "text": "Okay. Makes sense. Bye."
+        "text": "Let's do nine."
       },
       {
-        "start": 69.11,
+        "start": 38.62,
         "role": "agent",
-        "text": "You're welcome, Brian. Take care, and we'll be in touch soon."
+        "text": "Okay, 9 tomorrow morning.   I just need your name and a callback number to lock it in."
+      },
+      {
+        "start": 44.04,
+        "role": "caller",
+        "text": "Yeah. It's Brian Cooper. And my number is seven one three five five five zero one five one."
+      },
+      {
+        "start": 50.51,
+        "role": "agent",
+        "text": "Got it, Brian.  You're all set for 9 tomorrow morning.  You'll get a confirmation text soon.  Anything else I can help with?"
+      },
+      {
+        "start": 58.91,
+        "role": "caller",
+        "text": "Yeah. Actually, do you guys do regular AC tune ups too?"
+      },
+      {
+        "start": 62.98,
+        "role": "agent",
+        "text": "We sure do.  They're a hundred twenty-nine dollars.  Want to add one for another day, or just keep the estimate for now?"
+      },
+      {
+        "start": 70.51,
+        "role": "caller",
+        "text": "Let's just keep the estimate for now. I've got a rental house with an older unit, I might call back about a tune up for that one."
+      },
+      {
+        "start": 78.45,
+        "role": "agent",
+        "text": "Sounds good. Just give us a call when you're ready.   We'll see you tomorrow at nine for the estimate.   Have a great day, Brian!"
+      },
+      {
+        "start": 85.63,
+        "role": "caller",
+        "text": "Thanks. You too."
+      },
+      {
+        "start": 86.57,
+        "role": "caller",
+        "text": "Bye."
+      },
+      {
+        "start": 88.28,
+        "role": "agent",
+        "text": "Bye, Brian. Take care."
       }
     ],
-    "callId": "call_82616bb4e4d2c61010a38803dfa"
+    "callId": "call_27b1d5bee4c3062c8b317a3d8b4"
   },
   "dental-es": {
     "src": "/voice-demo/dental-es.m4a",
@@ -918,7 +1043,7 @@
   },
   "dental-en": {
     "src": "/voice-demo/dental-en.m4a",
-    "duration": 85.8,
+    "duration": 98.1,
     "transcript": [
       {
         "start": 0.4,
@@ -926,87 +1051,107 @@
         "text": "Bright Smile Dental Care, how can I help you today?"
       },
       {
-        "start": 4.32,
+        "start": 4.96,
         "role": "caller",
-        "text": "Hi. Yeah. I chipped my front tooth last night, and I need to get it fixed before Thursday."
+        "text": "Hey. Yeah. I was looking to get my teeth whitened."
       },
       {
-        "start": 9.47,
+        "start": 8.11,
         "role": "agent",
-        "text": "Ouch, that sounds rough.  Let's get you in quick.  I can do a same-day slot this afternoon, or tomorrow morning.  Which works better for you?"
+        "text": "Sure.  Are you hoping to come in this week, or is next week better?"
       },
       {
-        "start": 18.27,
+        "start": 12.72,
         "role": "caller",
-        "text": "Tomorrow morning is better."
+        "text": "Next week works better."
       },
       {
-        "start": 19.63,
-        "role": "caller",
-        "text": "What time do you have?"
-      },
-      {
-        "start": 21.72,
+        "start": 14.97,
         "role": "agent",
-        "text": "Morning's usually open around 8 or 9:30.  If you need later, I can check for 11.  Want to grab one of those?"
+        "text": "Okay.  Do you prefer early in the week or later?"
       },
       {
-        "start": 28.79,
+        "start": 19.15,
         "role": "caller",
-        "text": "Nine thirty works."
+        "text": "Early is probably better, like Monday or Tuesday."
       },
       {
-        "start": 30.07,
-        "role": "caller",
-        "text": "I don't have dental insurance."
-      },
-      {
-        "start": 31.9,
-        "role": "caller",
-        "text": "How much is a visit for something like this?"
-      },
-      {
-        "start": 34.85,
+        "start": 23,
         "role": "agent",
-        "text": "If you're new, it's seventy-nine dollars for the exam, cleaning, and X-rays.   Fixing the chip depends on what the dentist recommends — it could be a filling or a crown.   They'll go over the options and prices at your visit.   Want me to go ahead and book that nine thirty tomorrow?"
+        "text": "Mondays and Tuesdays book up fast, so I'd try Tuesday.  Want me to check for an 8 or 9 AM slot?"
       },
       {
-        "start": 50.53,
+        "start": 30.11,
         "role": "caller",
-        "text": "Yeah. Go ahead and book it. Do you do payment plans if it ends up costing more than I can pay right away?"
+        "text": "Yeah. Eight or nine sounds good."
       },
       {
-        "start": 56.36,
+        "start": 32.55,
         "role": "agent",
-        "text": "Yeah, we do offer payment plans for bigger treatments.   I'll hold your spot for nine thirty tomorrow.   Can I get your name and a callback number?"
+        "text": "Okay.  I can hold a spot for you Tuesday at 8 or 9 AM.  Which one works best?"
       },
       {
-        "start": 64.87,
+        "start": 38.12,
         "role": "caller",
-        "text": "It's Kevin Turner. And my number is seven one three five five five zero one five three."
+        "text": "Let's do nine."
       },
       {
-        "start": 71.1,
+        "start": 39.73,
         "role": "agent",
-        "text": "Thanks, Kevin.  You're all set for 9:30 tomorrow morning.  You'll get a confirmation text soon.  Just come a few minutes early to fill out some paperwork.  See you then!"
+        "text": "Perfect.  Tuesday at 9 AM for whitening.  Can I get your name and a phone number to confirm?"
       },
       {
-        "start": 80.95,
+        "start": 45.69,
         "role": "caller",
-        "text": "Awesome. Thanks."
+        "text": "Sure. It's Kevin Turner. And my number is seven one three five five five zero one five three."
       },
       {
-        "start": 81.93,
+        "start": 52.47,
+        "role": "agent",
+        "text": "Thanks, Kevin.   You're all set for Tuesday at 9 AM.   You'll get a confirmation text soon.   Anything else I can help with?"
+      },
+      {
+        "start": 60.26,
+        "role": "caller",
+        "text": "Yeah. Should I get a cleaning first?"
+      },
+      {
+        "start": 62.07,
+        "role": "caller",
+        "text": "Haven't been in for a couple years."
+      },
+      {
+        "start": 67.1,
+        "role": "agent",
+        "text": "Yeah, definitely do a cleaning first.  Whitening works best on freshly cleaned teeth, and you'll get better results if it's been a while.  Want me to add that to your Tuesday appointment?"
+      },
+      {
+        "start": 77.31,
+        "role": "caller",
+        "text": "Yeah. Let's do that. Go ahead and add the cleaning."
+      },
+      {
+        "start": 80.5,
+        "role": "agent",
+        "text": "Okay.  I'll put you down for a cleaning and whitening on Tuesday at 9 AM.  You'll be all set.  You'll get a confirmation text soon.  Thanks for calling, Kevin.  Have a great day."
+      },
+      {
+        "start": 91.77,
+        "role": "caller",
+        "text": "Awesome. Thanks so much."
+      },
+      {
+        "start": 92.95,
         "role": "caller",
         "text": "Bye."
       },
       {
-        "start": 83.56,
+        "start": 94.61,
         "role": "agent",
-        "text": "Take care, Kevin. See you tomorrow morning."
+        "text": "Thanks, Kevin. See you Tuesday at 9. Have a great day!"
       }
     ],
-    "callId": "call_22ced7666fbd98b59415030434d"
+    "callId": "call_98cbad30ccf348693f5759032ac"
   },
   "taller-es": {
     "src": "/voice-demo/taller-es.m4a",
@@ -1107,7 +1252,7 @@
   },
   "taller-en": {
     "src": "/voice-demo/taller-en.m4a",
-    "duration": 90.9,
+    "duration": 84.4,
     "transcript": [
       {
         "start": 0.4,
@@ -1115,72 +1260,87 @@
         "text": "Torque Auto Repair, what's going on with your vehicle?"
       },
       {
-        "start": 4.08,
+        "start": 4.64,
         "role": "caller",
-        "text": "Yeah. My check engine light came on, the brakes started grinding."
+        "text": "Yeah. I just need to get my state inspection done."
       },
       {
-        "start": 8.92,
+        "start": 8.43,
         "role": "agent",
-        "text": "Okay.  We can take a look at both of those.  Are you looking to bring it in this afternoon, or would tomorrow morning work better?"
+        "text": "Perfect, we can do a Texas state inspection for twenty-five dollars and fifty cents.  Do you want to come in tomorrow, or would Saturday work better?"
       },
       {
-        "start": 16.93,
+        "start": 17.68,
         "role": "caller",
-        "text": "I gotta drive to Austin Friday, so, yeah, I'd need it checked before then. What's the diagnostic cost?"
+        "text": "Tomorrow works."
       },
       {
-        "start": 23.53,
+        "start": 23.42,
         "role": "agent",
-        "text": "The check engine diagnostic is ninety-five dollars, and that goes toward the total if you go ahead with the repair.  Brake inspection is included if you're already coming in for the check engine light.  Want to drop it off later today or first thing tomorrow?"
+        "text": "Sorry, I didn't catch"
       },
       {
-        "start": 38.73,
+        "start": 23.34,
         "role": "caller",
-        "text": "Oh, cool. I drop it off, do you guys do rides to work or back home?"
+        "text": "Oh, and I'm due for an oil change too. Can I add that on?"
       },
       {
-        "start": 43.45,
+        "start": 28.05,
         "role": "agent",
-        "text": "Yep, we've got a free shuttle within five miles.  Just let me know where you need to go when you drop it off.  Want to book for later today or tomorrow morning?"
+        "text": "Sure, you can add an oil change.  Do you want conventional or synthetic?"
       },
       {
-        "start": 52.08,
+        "start": 33.02,
         "role": "caller",
-        "text": "Tomorrow morning's better. You get me in around eight?"
+        "text": "Synthetic, please."
       },
       {
-        "start": 55.51,
+        "start": 34.51,
+        "role": "caller",
+        "text": "is that?"
+      },
+      {
+        "start": 35.8,
         "role": "agent",
-        "text": "Yeah, eight tomorrow works.  I just need your name, a callback number, and what kind of car you're bringing in."
+        "text": "Synthetic is seventy-nine dollars.  With the inspection, that brings it to about a hundred and five dollars total.  What time tomorrow works for you — morning or afternoon?"
       },
       {
-        "start": 61.92,
+        "start": 45.85,
         "role": "caller",
-        "text": "Sure. It's Kevin Walsh. My number is seven one three five five five zero one five five. And it's a two thousand nineteen Ford f one fifty."
+        "text": "Morning's better."
       },
       {
-        "start": 71.35,
+        "start": 47.22,
+        "role": "caller",
+        "text": "come in before ten, can I just wait there while you do it?"
+      },
+      {
+        "start": 50.61,
         "role": "agent",
-        "text": "Perfect, Kevin.  I've got you down for eight tomorrow morning with your two thousand nineteen Ford F-one-fifty.  You'll get a confirmation text.  Just let us know where you need the shuttle when you drop it off.  Anything else you want to mention about the truck?"
+        "text": "Yep, if you get here before ten, you can usually wait while we do both.  It usually takes about an hour.  Can I get your name and a good number to text you a confirmation?"
       },
       {
-        "start": 84.8,
+        "start": 59.91,
         "role": "caller",
-        "text": "That's it. Thanks, Kevin."
+        "text": "It's Kevin Walsh and my number is seven one three five five five zero one five five."
       },
       {
-        "start": 86.39,
-        "role": "caller",
-        "text": "Bye."
-      },
-      {
-        "start": 88.1,
+        "start": 66.7,
         "role": "agent",
-        "text": "Alright, see you tomorrow morning. Have a good one, Kevin."
+        "text": "Got it, Kevin.  You're all set for the state inspection and synthetic oil change tomorrow morning.  You'll get a confirmation text shortly.  Just bring your car in before ten, and we'll take care of you.  See you then!"
+      },
+      {
+        "start": 78.96,
+        "role": "caller",
+        "text": "Awesome. Thanks. Bye."
+      },
+      {
+        "start": 81.25,
+        "role": "agent",
+        "text": "You're welcome, Kevin. Have a good one, see you tomorrow!"
       }
     ],
-    "callId": "call_1baf54fcb9e15bd314f3a5a44c6"
+    "callId": "call_9cf4075f773d9d58874a3d454f2"
   },
   "bienes-raices-es": {
     "src": "/voice-demo/bienes-raices-es.m4a",
@@ -1266,7 +1426,7 @@
   },
   "bienes-raices-en": {
     "src": "/voice-demo/bienes-raices-en.m4a",
-    "duration": 103.5,
+    "duration": 66.2,
     "transcript": [
       {
         "start": 0.4,
@@ -1274,96 +1434,61 @@
         "text": "Front Porch Realty. Are you looking to buy, sell or rent?"
       },
       {
-        "start": 5.42,
+        "start": 4.86,
         "role": "caller",
-        "text": "Yeah. I'm looking to buy."
+        "text": "Yeah. I'm looking to rent."
       },
       {
-        "start": 7.8,
+        "start": 6.83,
         "role": "agent",
-        "text": "Great.  Have you already been pre-approved for a mortgage, or are you just starting out?"
+        "text": "Great.  What's your budget, and what area are you looking in?"
       },
       {
-        "start": 13.39,
+        "start": 11.48,
         "role": "caller",
-        "text": "I'm already preapproved."
+        "text": "I'd like to stay under twenty four hundred a month, and we're looking in Cypress."
       },
       {
-        "start": 15.74,
+        "start": 15.9,
         "role": "agent",
-        "text": "Great, that makes things a lot smoother.  What price range are you looking in, and which area do you have in mind?"
+        "text": "Okay, under twenty-four hundred in Cypress.  When are you hoping to move in?"
       },
       {
-        "start": 23.05,
+        "start": 21.01,
         "role": "caller",
-        "text": "I'm looking up to four hundred thousand and I want to be in K if possible."
+        "text": "Our lease ends in about six weeks, so we're hoping to move around then."
       },
       {
-        "start": 27.58,
+        "start": 25.27,
         "role": "agent",
-        "text": "Perfect, up to four hundred thousand in Katy.  How many bedrooms do you need, and when are you hoping to move?"
+        "text": "Okay, that gives us some time.  Can I get your name and the best number for the leasing agent to reach you?"
       },
       {
-        "start": 34.72,
-        "role": "caller",
-        "text": "Four bedrooms would be ideal. And I need to move in about two months."
-      },
-      {
-        "start": 38.95,
-        "role": "agent",
-        "text": "Got it, four bedrooms and two months.  Want to set up a call with an agent this week, or do you want to go see some homes in person first?"
-      },
-      {
-        "start": 48.31,
-        "role": "caller",
-        "text": "I'm actually still in Chicago, so I can't come in person yet. Could an agent maybe do video tours for a few homes?"
-      },
-      {
-        "start": 55.24,
-        "role": "agent",
-        "text": "Yeah, we do video tours all the time for out-of-town buyers.  Want to set up a call with an agent this weekend to talk through what you're looking for?"
-      },
-      {
-        "start": 63.59,
-        "role": "caller",
-        "text": "Oh, perfect. Yeah. This weekend works."
-      },
-      {
-        "start": 67.04,
-        "role": "agent",
-        "text": "Alright, would you rather do Saturday morning or Sunday afternoon?"
-      },
-      {
-        "start": 71.35,
-        "role": "caller",
-        "text": "Saturday morning sounds good."
-      },
-      {
-        "start": 73.97,
-        "role": "agent",
-        "text": "Great, Saturday morning it is.  Can I get your name and the best number for the agent to call?"
-      },
-      {
-        "start": 79.49,
+        "start": 31.82,
         "role": "caller",
         "text": "Yeah. It's Daniel Reed. And my number is seven one three five five five zero one five seven."
       },
       {
-        "start": 85.98,
+        "start": 38.41,
         "role": "agent",
-        "text": "Thanks, Daniel.  You're all set for a call with an agent on Saturday morning.  You'll get a confirmation text soon.  If you need to change anything, just give us a call.  Good luck with the move down here!"
+        "text": "Thanks, Daniel.  I've got you down for Cypress, under twenty-four hundred, moving in about six weeks out.  The leasing agent will call you today at seven one three, five five five, zero one five seven.  Anything else you want them to know?"
       },
       {
-        "start": 97.36,
+        "start": 52.32,
         "role": "caller",
-        "text": "Thanks. You too. Bye."
+        "text": "Yeah. We have a medium sized dog, so it needs to be pet friendly."
       },
       {
-        "start": 99.9,
+        "start": 55.59,
+        "role": "caller",
+        "text": "And we're hoping for three bedrooms if possible."
+      },
+      {
+        "start": 58.47,
         "role": "agent",
-        "text": "Thanks, Daniel. Have a great day and safe travels. Bye!"
+        "text": "Got it, pet-friendly and three bedrooms if possible.  The leasing agent will have all that and reach out today.  Thanks for calling, Daniel.  Have a good one."
       }
     ],
-    "callId": "call_6c5edd261448e63a13e5c868b37"
+    "callId": "call_2358d8324c42c0d203a2e0f8b60"
   }
 }
