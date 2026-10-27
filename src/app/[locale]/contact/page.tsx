@@ -4,6 +4,7 @@ import type { FormEvent } from "react";
 import { useParams } from "next/navigation";
 import { ArrowRight, Loader2 } from "lucide-react";
 import AnimateIn from "@/components/AnimateIn";
+import { trackEvent } from "@/lib/analytics";
 import en from "@/dictionaries/en";
 import es from "@/dictionaries/es";
 
@@ -46,6 +47,8 @@ export default function ContactPage() {
 
       if (!res.ok) throw new Error("Failed");
       setSent(true);
+      // Lead para GA4 (y para Google Ads cuando se conecte)
+      trackEvent("generate_lead", { form: "contact", goal, locale });
     } catch {
       setError(
         locale === "es"

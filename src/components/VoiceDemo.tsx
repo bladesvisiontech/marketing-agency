@@ -19,6 +19,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { trackEvent } from "@/lib/analytics";
 import { VoicePoweredOrb } from "@/components/ui/voice-powered-orb";
 import RoiCalculator from "@/components/RoiCalculator";
 import type { Dictionary } from "@/dictionaries/en";
@@ -150,6 +151,7 @@ export default function VoiceDemo({ t, locale, initialIndustry, showSellerNotes 
     // Sin await entre el clic y play(): Safari de iPhone exige que salgan del mismo gesto
     void contextRef.current?.resume();
     audio.play().catch(() => setFailed(true));
+    if (phase === "idle") trackEvent("demo_play", { industry: industry.slug, lang: callLang });
   }
 
   function seek(value: number) {

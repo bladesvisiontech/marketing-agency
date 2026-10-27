@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileBottomBar from "@/components/MobileBottomBar";
 import ChatBot from "@/components/ChatBot";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 // WhatsAppButton removed
 import { getDictionary, isValidLocale } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
@@ -55,6 +56,7 @@ export default async function LocaleLayout({
         <MobileBottomBar dict={dict} locale={locale as Locale} />
         {/* AI chatbot — replaces WhatsApp bubble */}
         <ChatBot />
+        <GoogleAnalytics />
       </body>
     </html>
   );
